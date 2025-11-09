@@ -21,13 +21,15 @@
 | 攻撃力（実数） | `ATK` | フラット値 |
 | HP（実数） | `HP` | フラット値 |
 | 防御力（実数） | `DEF` | フラット値 |
-| 元素ダメージ%（炎/水/雷/風/氷/岩/草） | `<Element>DMG%` / `ElementalDMG%` | 例: `PyroDMG%`, `ElectroDMG%`, `DendroDMG%`。UIで属性指定が不要な場合は `ElementalDMG%` を使用。 |
+| 元素ダメージ%（炎/水/雷/風/氷/岩/草） | `<Element>DMG%` / `ElementalDMG%` | 例: `PyroDMG%`, `ElectroDMG%`, `DendroDMG%`。UIの「以下のオプションをすべて選択」ボタンには物理ダメージも含まれるが、本リポジトリでは元素のみを `ElementalDMG%` として扱い、物理を許可する場合は `PhysicalDMG%` を別途指定する。 |
 | 物理ダメージ% | `PhysicalDMG%` | 杯の主ステ |
 | 治療効果 | `Healing%` | 冠の主ステ |
 
 > YAML例での省略：  
 > - **会心系**は `"CR", "CD"`  
 > - **反応/サポ系**は `"ER", "EM"` をよく使います。
+
+> **補足**: UI では「以下のオプションをすべて選択」で元素/物理の両方を一括指定できるが、YAML では元素（`ElementalDMG%`）と物理（`PhysicalDMG%`）を分けて表現する。catch-all ボタンを再現したい場合は、両方のキーを `main_allowed` に並べること。
 
 ---
 

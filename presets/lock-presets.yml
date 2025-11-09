@@ -43,57 +43,64 @@ sets:
             substats_required_all_of: [ER, EM]
 
       - key: setting1
-        name: Support-keep (lenient)
-        targets: [Xingqiu, Yelan, Xiangling, Fischl, Beidou, YaeMiko,
-                  Kokomi, Baizhu, Bennett, Diona, Layla, Kirara,
-                  Barbara, Thoma, Qiqi, KukiShinobu, Collei, Kaveh]
+        name: Moonlight Battery (Electro/Hydro support)
+        targets: [RaidenShogun, Inefa, Aino, Xingqiu, Yelan]
         slots:
           flower:
-            main_allowed: [Any]
-            substats_required_any_of: [ER, EM, CR, CD]
-            substats_required_min: 2
+            main_allowed: [HP]
+            substats_required_any_of: [ER, EM, HP%, ATK%, CR, CD]
+            substats_required_min: 3
+            substats_required_all_of: [ER]
           plume:
-            main_allowed: [Any]
-            substats_required_any_of: [ER, EM, CR, CD]
-            substats_required_min: 2
+            main_allowed: [ATK]
+            substats_required_any_of: [ER, EM, HP%, ATK%, CR, CD]
+            substats_required_min: 3
+            substats_required_all_of: [ER]
           sands:
             main_allowed: [ER%, EM]
-            substats_required_any_of: [ER, EM, CR, CD]
-            substats_required_min: 2
+            substats_required_any_of: [ER, EM, HP%, ATK%, CR, CD]
+            substats_required_min: 3
+            substats_required_all_of: [ER]
           goblet:
-            main_allowed: [ElementalDMG%, EM]
-            substats_required_any_of: [CR, CD, ER, EM]
-            substats_required_min: 2
+            main_allowed: [ElectroDMG%, HydroDMG%, ElementalDMG%, EM]
+            substats_required_any_of: [ER, EM, HP%, ATK%, CR, CD]
+            substats_required_min: 3
+            substats_required_all_of: [ER]
           circlet:
-            main_allowed: [CR, CD, Healing%, EM]
-            substats_required_any_of: [ER, EM, CR]
-            substats_required_min: 2
+            main_allowed: [EM, Healing%, CR]
+            substats_required_any_of: [ER, EM, HP%, ATK%, CR, CD]
+            substats_required_min: 3
+            substats_required_all_of: [ER]
 
       - key: setting2
-        name: Support/Sub-DPS (strict)
-        targets: [Xingqiu, Yelan, Xiangling, Fischl, YaeMiko,
-                  Kokomi, Baizhu, KukiShinobu, Nahida, Collei]
+        name: Bloom Architect (Dendro reaction)
+        targets: [Rauma, Kaveh, TravelerDendro, Nahida, Collei]
         slots:
           flower:
-            main_allowed: [Any]
-            substats_required_any_of: [ER, EM, CR, CD]
+            main_allowed: [HP]
+            substats_required_any_of: [EM, ER, ATK%, CR, CD]
             substats_required_min: 3
+            substats_required_all_of: [EM]
           plume:
-            main_allowed: [Any]
-            substats_required_any_of: [ER, EM, CR, CD]
+            main_allowed: [ATK]
+            substats_required_any_of: [EM, ER, ATK%, CR, CD]
             substats_required_min: 3
+            substats_required_all_of: [EM]
           sands:
-            main_allowed: [ER%, EM]
-            substats_required_any_of: [ER, EM, CR, CD]
+            main_allowed: [EM, ATK%]
+            substats_required_any_of: [EM, ER, ATK%, CR, CD]
             substats_required_min: 3
+            substats_required_all_of: [EM]
           goblet:
-            main_allowed: [ElementalDMG%]
-            substats_required_any_of: [CR, CD, EM]
-            substats_required_min: 2
-          circlet:
-            main_allowed: [CR, CD, Healing%, EM]
-            substats_required_any_of: [ER, EM, CR, CD]
+            main_allowed: [DendroDMG%, ElementalDMG%, EM]
+            substats_required_any_of: [EM, ER, ATK%, CR, CD]
             substats_required_min: 3
+            substats_required_all_of: [EM]
+          circlet:
+            main_allowed: [EM, CR, CD]
+            substats_required_any_of: [EM, ER, ATK%, CR, CD]
+            substats_required_min: 3
+            substats_required_all_of: [EM]
 
   - id: tenkyu
     name_ja: 天穹の顕現せし夜

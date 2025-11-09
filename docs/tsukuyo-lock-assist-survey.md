@@ -33,3 +33,16 @@ HoYoWiki を直接呼び出す API (`https://sg-wiki-api.hoyolab.com/hoyowiki/ge
 
 ## 4. 結論
 上記スクリーンショットを根拠に `presets/tsukuyo/recommended.yml` および `presets/lock-presets.yml` の Tsukuyo 推奨設定を更新済み。別途「設定1/2」はこれまでどおりユーザー独自のフィルタとして維持している。
+
+## Custom Preset 調査メモ
+`setting1/2` を「月反応チーム内で役割が異なるサポート archetype」として再定義した。各ビルドは以下の攻略サイトに根拠がある。
+
+### Setting1 – Moonlight Battery (Electro/Hydro support)
+- [Game8 (2025/11/07)](https://game8.jp/genshin/714003) は「熟知と元素チャージが重要なサポートキャラと相性が良い」と明記し、`雷電将軍 / 主人公(草) / イネファ / アイノ / ラウマ` をおすすめキャラとして掲載している。ER と EM を同時に要求するサブステ構成にしたのはこの記述が根拠。
+- [GameWith (2025/08/29)](https://gamewith.jp/genshin/article/show/516496) のおすすめ表では `イネファ / ラウマ / アイノ / カーヴェ / 行秋` など、月バフを撒きながら味方を支援するキャラが列挙されている。特に `アイノ / 行秋` は Hydro サブアタとして ER・HP% を両立させたいので、`main_allowed` に HydroDMG% や Healing% を含めた。
+- [神ゲー攻略 (2025/08/30)](https://kamigame.jp/genshin/page/384955936327877443.html) でも `ラウマ` と `アイノ` を例に挙げ「味方全員の元素熟知をバフ」「爆発回転率を上げる」と説明していることから、ER を必須 (`substats_required_all_of: [ER]`) とした。
+
+### Setting2 – Bloom Architect (Dendro reaction)
+- GameWith の同記事で `ラウマ / カーヴェ` をセット適性キャラに挙げ、「天穹の顕現せし夜を別キャラに装備させると月反応ダメージが伸びる」と解説しているため、Dendro ドライバー/サポーター用プリセットとして切り分けた。
+- Game8 でも `主人公(草)` を含む Dendro サポーターを推奨しており、熟知優先型で組む記述があるため `substats_required_all_of` に `EM` を指定。
+- 神ゲー攻略は「月反応軸のサポーターに最適」「サブアタッカーにおすすめ」とまとめており、Dendro エンジニア（`Rauma, TravelerDendro, Nahida, Collei` など）向けに `EM` 主体のメイン/サブステを要求する形にした。

@@ -3,29 +3,33 @@ set_id: tsukuyo
 set_name_ja: 月を紡ぐ夜の歌
 preset:
   key: setting2
-  name: Support/Sub-DPS (strict)
+  name: Bloom Architect (Dendro reaction)
   nickname_en: Moonweaver
-  intent: support_subdps
-  targets: [Xingqiu, Yelan, Xiangling, Fischl, YaeMiko,
-            Kokomi, Baizhu, KukiShinobu, Nahida, Collei]
+  intent: support_dendro_reaction
+  targets: [Rauma, Kaveh, TravelerDendro, Nahida, Collei]
   slots:
     flower:
-      main_allowed: [Any]
-      substats_required_any_of: [ER, EM, CR, CD]
+      main_allowed: [HP]
+      substats_required_any_of: [EM, ER, ATK%, CR, CD]
       substats_required_min: 3
+      substats_required_all_of: [EM]
     plume:
-      main_allowed: [Any]
-      substats_required_any_of: [ER, EM, CR, CD]
+      main_allowed: [ATK]
+      substats_required_any_of: [EM, ER, ATK%, CR, CD]
       substats_required_min: 3
+      substats_required_all_of: [EM]
     sands:
-      main_allowed: [ER%, EM]
-      substats_required_any_of: [ER, EM, CR, CD]
+      main_allowed: [EM, ATK%]
+      substats_required_any_of: [EM, ER, ATK%, CR, CD]
       substats_required_min: 3
+      substats_required_all_of: [EM]
     goblet:
-      main_allowed: [ElementalDMG%]        # EM goblet は優良サブのみ手動運用推奨
-      substats_required_any_of: [CR, CD, EM]
-      substats_required_min: 2
-    circlet:
-      main_allowed: [CR, CD, Healing%, EM]
-      substats_required_any_of: [ER, EM, CR, CD]
+      main_allowed: [DendroDMG%, ElementalDMG%, EM]
+      substats_required_any_of: [EM, ER, ATK%, CR, CD]
       substats_required_min: 3
+      substats_required_all_of: [EM]
+    circlet:
+      main_allowed: [EM, CR, CD]
+      substats_required_any_of: [EM, ER, ATK%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: [EM]

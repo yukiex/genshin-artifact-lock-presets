@@ -3,30 +3,33 @@ set_id: tsukuyo
 set_name_ja: 月を紡ぐ夜の歌
 preset:
   key: setting1
-  name: Support-keep (lenient)
+  name: Moonlight Battery (Electro/Hydro support)
   nickname_en: Moonweaver
-  intent: support_offfield
-  targets: [Xingqiu, Yelan, Xiangling, Fischl, Beidou, YaeMiko,
-            Kokomi, Baizhu, Bennett, Diona, Layla, Kirara,
-            Barbara, Thoma, Qiqi, KukiShinobu, Collei, Kaveh]
+  intent: support_battery
+  targets: [RaidenShogun, Inefa, Aino, Xingqiu, Yelan]
   slots:
     flower:
-      main_allowed: [Any]
-      substats_required_any_of: [ER, EM, CR, CD]
-      substats_required_min: 2
+      main_allowed: [HP]
+      substats_required_any_of: [ER, EM, HP%, ATK%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: [ER]
     plume:
-      main_allowed: [Any]
-      substats_required_any_of: [ER, EM, CR, CD]
-      substats_required_min: 2
+      main_allowed: [ATK]
+      substats_required_any_of: [ER, EM, HP%, ATK%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: [ER]
     sands:
       main_allowed: [ER%, EM]
-      substats_required_any_of: [ER, EM, CR, CD]
-      substats_required_min: 2
+      substats_required_any_of: [ER, EM, HP%, ATK%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: [ER]
     goblet:
-      main_allowed: [ElementalDMG%, EM]
-      substats_required_any_of: [CR, CD, ER, EM]
-      substats_required_min: 2
+      main_allowed: [ElectroDMG%, HydroDMG%, ElementalDMG%, EM]
+      substats_required_any_of: [ER, EM, HP%, ATK%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: [ER]
     circlet:
-      main_allowed: [CR, CD, Healing%, EM]
-      substats_required_any_of: [ER, EM, CR]
-      substats_required_min: 2
+      main_allowed: [EM, Healing%, CR]
+      substats_required_any_of: [ER, EM, HP%, ATK%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: [ER]
