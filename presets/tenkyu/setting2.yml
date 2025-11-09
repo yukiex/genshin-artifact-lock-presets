@@ -1,0 +1,30 @@
+version: 1
+set_id: tenkyu
+set_name_ja: 天穹の顕現せし夜
+preset:
+  key: setting2
+  name: On-field DPS (strict)
+  nickname_en: Night of the Sky
+  intent: onfield_dps_strict
+  targets: [Cyno, Keqing, Clorinde, Alhaitham, Tighnari, Yoimiya, HuTao, Ganyu, Neuvillette]
+  slots:
+    flower:
+      main_allowed: [Any]
+      substats_required_any_of: [CR, CD, EM]
+      substats_required_min: 2
+    plume:
+      main_allowed: [Any]
+      substats_required_any_of: [CR, CD, EM]
+      substats_required_min: 2
+    sands:
+      main_allowed: [ATK%, EM, HP%]
+      substats_required_any_of: [CR, CD, EM, ER]
+      substats_required_min: 2
+    goblet:
+      main_allowed: [ElementalDMG%]
+      substats_required_any_of: [CR, CD, EM]
+      substats_required_min: 2
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [CR, CD]
+      substats_required_min: 2

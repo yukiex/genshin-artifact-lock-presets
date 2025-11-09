@@ -1,0 +1,32 @@
+version: 1
+set_id: tsukuyo
+set_name_ja: 月を紡ぐ夜の歌
+preset:
+  key: recommended
+  name: Recommended (baseline)
+  nickname_en: Moonweaver
+  intent: support_offfield
+  targets: [Xingqiu, Yelan, Xiangling, Fischl, Beidou, YaeMiko,
+            Kokomi, Baizhu, Bennett, Diona, Layla, Kirara,
+            Barbara, Thoma, Qiqi, KukiShinobu, Collei, Kaveh]
+  slots:
+    flower:
+      main_allowed: [Any]
+      substats_required_any_of: [ER, EM, CR, CD]
+      substats_required_min: 2
+    plume:
+      main_allowed: [Any]
+      substats_required_any_of: [ER, EM, CR, CD]
+      substats_required_min: 2
+    sands:
+      main_allowed: [ER%, EM]
+      substats_required_any_of: [ER, EM, CR, CD]
+      substats_required_min: 2
+    goblet:
+      main_allowed: [ElementalDMG%, EM]
+      substats_required_any_of: [CR, CD, ER, EM]
+      substats_required_min: 2
+    circlet:
+      main_allowed: [CR, CD, Healing%, EM]
+      substats_required_any_of: [ER, EM, CR]
+      substats_required_min: 2

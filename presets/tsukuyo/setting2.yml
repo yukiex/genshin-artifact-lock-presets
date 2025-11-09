@@ -1,0 +1,31 @@
+version: 1
+set_id: tsukuyo
+set_name_ja: 月を紡ぐ夜の歌
+preset:
+  key: setting2
+  name: Support/Sub-DPS (strict)
+  nickname_en: Moonweaver
+  intent: support_subdps
+  targets: [Xingqiu, Yelan, Xiangling, Fischl, YaeMiko,
+            Kokomi, Baizhu, KukiShinobu, Nahida, Collei]
+  slots:
+    flower:
+      main_allowed: [Any]
+      substats_required_any_of: [ER, EM, CR, CD]
+      substats_required_min: 3
+    plume:
+      main_allowed: [Any]
+      substats_required_any_of: [ER, EM, CR, CD]
+      substats_required_min: 3
+    sands:
+      main_allowed: [ER%, EM]
+      substats_required_any_of: [ER, EM, CR, CD]
+      substats_required_min: 3
+    goblet:
+      main_allowed: [ElementalDMG%]        # EM goblet は優良サブのみ手動運用推奨
+      substats_required_any_of: [CR, CD, EM]
+      substats_required_min: 2
+    circlet:
+      main_allowed: [CR, CD, Healing%, EM]
+      substats_required_any_of: [ER, EM, CR, CD]
+      substats_required_min: 3
