@@ -9,7 +9,7 @@
 ---
 
 ## Highlights
-- 1セットにつき `recommended` / `setting1` (lenient) / `setting2` (strict) の3段階を提供
+- 1セットにつきゲーム内推奨 (`recommended`) と、用途別にチューニングした `setting1` / `setting2`（キャラクターアーキタイプ向けカスタム）を提供
 - UI と YAML の対応は [`docs/ui-mapping.md`](./docs/ui-mapping.md) に表形式で整理
 - `presets/lock-presets.yml` はすべてのセットを 1 ファイルにまとめた「配布用カタログ」
 
@@ -51,6 +51,7 @@ genshin-artifact-lock-presets/
    - YAML の `substats_required_any_of` に載っているサブステをチェックで指定
    - `substats_required_min` と同じ数値を UI の「いずれか N 個以上」に入力
    - `main_allowed` を参考に UI のメイン効果フィルタを絞り込み（杯=元素ダメ% 等）
+   - **推奨（Recommended）は常時オンにし、必要に応じて `setting1/setting2` を追加で有効化する**（推奨を外すのは、さらに狭い条件だけを拾いたい特殊ケース）
 4. Strict → Lenient の順でロックすると在庫整理がスムーズです（天穹で会心無しを除去 → 月を紡ぐで ER/EM 良品を確保）。
 
 ---
