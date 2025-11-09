@@ -1,0 +1,35 @@
+version: 1
+set_id: shinro
+set_name_ja: 深廊の終曲
+preset:
+  key: setting1
+  name: Zero-Energy Cryo Driver
+  nickname_en: Finale of the Deep
+  intent: onfield_cryo_driver
+  targets: [Skirk, Marvica]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [ATK%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: [CR, CD]
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [ATK%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: [CR, CD]
+    sands:
+      main_allowed: [ATK%, ER%]
+      substats_required_any_of: [ATK%, CR, CD, ER]
+      substats_required_min: 3
+      substats_required_all_of: [CR, CD]
+    goblet:
+      main_allowed: [CryoDMG%, ATK%]
+      substats_required_any_of: [ATK%, CR, CD, ER]
+      substats_required_min: 3
+      substats_required_all_of: [CR, CD]
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [ATK%, CR, CD, ER]
+      substats_required_min: 3
+      substats_required_all_of: [CR, CD]

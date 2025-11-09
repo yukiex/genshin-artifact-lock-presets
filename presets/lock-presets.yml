@@ -162,6 +162,188 @@ sets:
             main_allowed: [CR, CD]
             substats_required_any_of: [CR, CD, EM, ATK%]
             substats_required_min: 3
+  - id: shinro
+    name_ja: 深廊の終曲
+    nickname_en: Finale of the Deep (Cryo DMG; energy drain gimmick)
+    presets:
+      - key: recommended
+        name: Recommended (official-like baseline)
+        targets: [Skirk, Marvica, Kaeya, Aloy]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          sands:
+            main_allowed: [ATK%]
+            substats_required_any_of: [CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          goblet:
+            main_allowed: [CryoDMG%, ATK%]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          circlet:
+            main_allowed: [CR, CD]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+
+      - key: setting1
+        name: Zero-Energy Cryo Driver
+        targets: [Skirk, Marvica]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+          sands:
+            main_allowed: [ATK%, ER%]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+          goblet:
+            main_allowed: [CryoDMG%, ATK%]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+          circlet:
+            main_allowed: [CR, CD]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+
+      - key: setting2
+        name: Cryo 2pc Hybrid (general DPS)
+        targets: [KamisatoAyaka, Ganyu, Rosaria, Shenhe]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [ATK%, ER, CR, CD]
+            substats_required_min: 2
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [ATK%, ER, CR, CD]
+            substats_required_min: 2
+          sands:
+            main_allowed: [ATK%, ER%]
+            substats_required_any_of: [ATK%, ER, CR, CD]
+            substats_required_min: 2
+          goblet:
+            main_allowed: [CryoDMG%, ATK%]
+            substats_required_any_of: [ATK%, ER, CR, CD]
+            substats_required_min: 2
+          circlet:
+            main_allowed: [CR, CD]
+            substats_required_any_of: [ATK%, ER, CR, CD]
+            substats_required_min: 2
+
+  - id: naganoya
+    name_ja: 長き夜の誓い
+    nickname_en: Song of Days Past (plunge stacks)
+    presets:
+      - key: recommended
+        name: Recommended (official-like baseline)
+        targets: [Xiao, Jiaoming, Varessa]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          sands:
+            main_allowed: [ATK%]
+            substats_required_any_of: [CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          goblet:
+            main_allowed: [PyroDMG%, ElectroDMG%, AnemoDMG%, ATK%]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          circlet:
+            main_allowed: [CR, CD]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+
+      - key: setting1
+        name: Plunge DPS Core
+        targets: [Xiao, Jiaoming, Varessa]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+          sands:
+            main_allowed: [ATK%, ER%]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+          goblet:
+            main_allowed: [AnemoDMG%, PyroDMG%, ElectroDMG%, GeoDMG%, ATK%]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+          circlet:
+            main_allowed: [CR, CD]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+
+      - key: setting2
+        name: Cloud-Retainer Enabled Plungers
+        targets: [Furina, Navia, Freminet, Noelle]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 2
+            substats_required_all_of: [CR]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 2
+            substats_required_all_of: [CR]
+          sands:
+            main_allowed: [ATK%, ER%]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 2
+            substats_required_all_of: [CR]
+          goblet:
+            main_allowed: [ElementalDMG%, ATK%]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 2
+            substats_required_all_of: [CR]
+          circlet:
+            main_allowed: [CR, CD]
+            substats_required_any_of: [ATK%, CR, CD, ER]
+            substats_required_min: 2
+            substats_required_all_of: [CR]
 
       - key: setting2
         name: Spread Driver (Dendro)
