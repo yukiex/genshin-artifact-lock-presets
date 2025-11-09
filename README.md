@@ -74,11 +74,12 @@ preset:
   nickname_en: ...         # 任意
   intent: support_offfield | onfield_dps | ...
   targets: [ ... ]         # 想定キャラ（任意）
-  slots:
-    flower|plume|sands|goblet|circlet:
-      main_allowed: [Any|ER%|ElementalDMG% ...]   # UI フィルタのヒント
-      substats_required_any_of: [CR, CD, ER, EM]  # UI でチェックする候補
-      substats_required_min: 1..3                 # いずれか N 個以上
+      slots:
+        flower|plume|sands|goblet|circlet:
+          main_allowed: [Any|ER%|ElementalDMG% ...]   # UI フィルタのヒント
+          substats_required_any_of: [CR, CD, ER, EM]  # UI でチェックする候補
+          substats_required_min: 1..3                 # いずれか N 個以上
+          substats_required_all_of: [ER, EM]          # “必須ステータス”として全て含める
 ```
 
 略語や UI 文言の正確な対応は `docs/ui-mapping.md` を参照してください。

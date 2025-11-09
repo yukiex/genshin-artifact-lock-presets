@@ -9,8 +9,23 @@ preset:
   targets: [Cyno, Keqing, Clorinde, Alhaitham, Tighnari,
             HuTao, Yoimiya, Ganyu, Tartaglia, Neuvillette, Eula]
   slots:
-    flower:  { main_allowed: [Any],            substats_required_any_of: [CR, CD],       substats_required_min: 1 }
-    plume:   { main_allowed: [Any],            substats_required_any_of: [CR, CD],       substats_required_min: 1 }
-    sands:   { main_allowed: [ATK%, EM, HP%],  substats_required_any_of: [CR, CD, ER],   substats_required_min: 1 }
-    goblet:  { main_allowed: [ElementalDMG%],  substats_required_any_of: [CR, CD],       substats_required_min: 1 }
-    circlet: { main_allowed: [CR, CD],         substats_required_any_of: [CR, CD],       substats_required_min: 1 }
+    flower:
+      main_allowed: [Any]
+      substats_required_any_of: [CR, CD]
+      substats_required_min: 1
+    plume:
+      main_allowed: [Any]
+      substats_required_any_of: [CR, CD]
+      substats_required_min: 1
+    sands:
+      main_allowed: [ATK%, EM, HP%]
+      substats_required_any_of: [CR, CD, ER]
+      substats_required_min: 1
+    goblet:
+      main_allowed: [ElementalDMG%]
+      substats_required_any_of: [CR, CD]
+      substats_required_min: 1
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [CR, CD]
+      substats_required_min: 1

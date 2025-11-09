@@ -10,22 +10,27 @@ preset:
             HuTao, Yoimiya, Ganyu, Tartaglia, Neuvillette, Eula]
   slots:
     flower:
-      main_allowed: [Any]
-      substats_required_any_of: [CR, CD]
-      substats_required_min: 1
+      main_allowed: [HP]
+      substats_required_any_of: [CR, CD, ER, EM]
+      substats_required_min: 2
+      substats_required_all_of: [CR, CD]
     plume:
-      main_allowed: [Any]
-      substats_required_any_of: [CR, CD]
-      substats_required_min: 1
+      main_allowed: [ATK]
+      substats_required_any_of: [CR, CD, ER, EM]
+      substats_required_min: 2
+      substats_required_all_of: [CR, CD]
     sands:
-      main_allowed: [ATK%, EM, HP%]   # 標準/反応/HPスケーラー
-      substats_required_any_of: [CR, CD, ER]
-      substats_required_min: 1
+      main_allowed: [EM, ATK%]
+      substats_required_any_of: [CR, CD, ER, EM]
+      substats_required_min: 2
+      substats_required_all_of: [CR, CD]
     goblet:
-      main_allowed: [ElementalDMG%]   # 元素杯のみロック対象
-      substats_required_any_of: [CR, CD]
-      substats_required_min: 1
+      main_allowed: [ElementalDMG%]
+      substats_required_any_of: [CR, CD, ER, EM]
+      substats_required_min: 2
+      substats_required_all_of: [CR, CD]
     circlet:
       main_allowed: [CR, CD]
-      substats_required_any_of: [CR, CD]
-      substats_required_min: 1
+      substats_required_any_of: [CR, CD, ER, EM]
+      substats_required_min: 2
+      substats_required_all_of: [CR, CD]
