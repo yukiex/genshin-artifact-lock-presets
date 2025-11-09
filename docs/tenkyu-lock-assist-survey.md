@@ -16,3 +16,17 @@
 ## 反映済みファイル
 - `presets/tenkyu/recommended.yml`
 - `presets/lock-presets.yml`
+
+## Custom Preset 調査メモ
+`setting1/setting2` は「異なるキャラクタータイプを 2 件まで保存できる」ゲーム内仕様に揃えるため、攻略サイトの記述を根拠にビルドごとに分岐させた。
+
+### Setting1 – Quickbloom Driver (Electro)
+- [GameWith: 天穹の顕現せし夜の効果と装備おすすめキャラ (2025/11/05)](https://gamewith.jp/genshin/article/show/516495) のおすすめ表にて、`セノ/アルハイゼン/ティナリ/ネフェル/フリンズ` など月反応を軸にしたメインアタッカーが明記されている。また本文で「例えばセノに天穹4セットを装備させ…」と月感電ドライバー事例が紹介されている。
+- [Gamerch 同記事](https://gamerch.com/genshinwiki/940069) ではナドクライ出身キャラに加えて `クロリンデ / 八重神子 / ウェンティ / 魈 / 楓原万葉` など雷・風のドライバー候補が列挙され、月感電を自前で起こせるキャラ向けと明示。
+- [神ゲー攻略 (2025/08/30)](https://kamigame.jp/genshin/page/384956109032531369.html) は「月反応に必要な熟知と会心をバフ」と強調しつつ `フリンズ / イネファ` を例に挙げ、会心+熟知を両立するビルドを推奨。
+- 以上より、`setting1` は月感電や超激化を自力で回せるオンフィールド雷アタッカー（`Cyno, Clorinde, YaeMiko, Keqing` など）を対象にし、サブステは `CR/CD/EM` を軸に `ER` を追加要求、砂は `EM/ATK%/ER%`、杯は `ElectroDMG%` を許可にした。
+
+### Setting2 – Spread Driver (Dendro)
+- GameWith の同記事おすすめ欄には `ネフェル / アルハイゼン / ティナリ` といったフィールド上で草元素攻撃を連発するドライバーが並んでおり、Spread（草激化）構成が主用途と読み取れる。
+- Gamerch のリストでも上記草キャラに加え `白朮 / コレイ / カーヴェ / 綺良々` 等の草サポートが記載されており、チーム内で月反応を回す草パーティが想定されている。
+- そのため `setting2` は草アタッカー（`Alhaitham, Tighnari, Nefer, Collei`）に合わせ、砂は `EM/ATK%`、杯は `DendroDMG%`、サブステは `CR/CD/EM/ATK%` の4項目から最低3個を求める構成にした。

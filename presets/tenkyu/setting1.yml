@@ -3,29 +3,28 @@ set_id: tenkyu
 set_name_ja: 天穹の顕現せし夜
 preset:
   key: setting1
-  name: On-field DPS (lenient)
+  name: Quickbloom Driver (Electro)
   nickname_en: Night of the Sky
-  intent: onfield_dps
-  targets: [Cyno, Keqing, Clorinde, Alhaitham, Tighnari,
-            HuTao, Yoimiya, Ganyu, Tartaglia, Neuvillette, Eula]
+  intent: onfield_dps_quickbloom
+  targets: [Cyno, Clorinde, YaeMiko, Keqing]
   slots:
     flower:
-      main_allowed: [Any]
-      substats_required_any_of: [CR, CD]
-      substats_required_min: 1
+      main_allowed: [HP]
+      substats_required_any_of: [CR, CD, EM, ATK%, ER]
+      substats_required_min: 3
     plume:
-      main_allowed: [Any]
-      substats_required_any_of: [CR, CD]
-      substats_required_min: 1
+      main_allowed: [ATK]
+      substats_required_any_of: [CR, CD, EM, ATK%, ER]
+      substats_required_min: 3
     sands:
-      main_allowed: [ATK%, EM, HP%]
-      substats_required_any_of: [CR, CD, ER]
-      substats_required_min: 1
+      main_allowed: [EM, ATK%, ER%]
+      substats_required_any_of: [CR, CD, EM, ATK%, ER]
+      substats_required_min: 3
     goblet:
-      main_allowed: [ElementalDMG%]
-      substats_required_any_of: [CR, CD]
-      substats_required_min: 1
+      main_allowed: [ElectroDMG%, ElementalDMG%, EM]
+      substats_required_any_of: [CR, CD, EM, ATK%, ER]
+      substats_required_min: 3
     circlet:
       main_allowed: [CR, CD]
-      substats_required_any_of: [CR, CD]
-      substats_required_min: 1
+      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_min: 3

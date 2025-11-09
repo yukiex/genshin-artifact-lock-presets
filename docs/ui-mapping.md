@@ -21,7 +21,7 @@
 | 攻撃力（実数） | `ATK` | フラット値 |
 | HP（実数） | `HP` | フラット値 |
 | 防御力（実数） | `DEF` | フラット値 |
-| 元素ダメージ%（炎/水/雷/風/氷/岩/草） | `ElementalDMG%` | 杯の主ステ系 |
+| 元素ダメージ%（炎/水/雷/風/氷/岩/草） | `<Element>DMG%` / `ElementalDMG%` | 例: `PyroDMG%`, `ElectroDMG%`, `DendroDMG%`。UIで属性指定が不要な場合は `ElementalDMG%` を使用。 |
 | 物理ダメージ% | `PhysicalDMG%` | 杯の主ステ |
 | 治療効果 | `Healing%` | 冠の主ステ |
 

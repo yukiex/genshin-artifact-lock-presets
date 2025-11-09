@@ -3,28 +3,28 @@ set_id: tenkyu
 set_name_ja: 天穹の顕現せし夜
 preset:
   key: setting2
-  name: On-field DPS (strict)
+  name: Spread Driver (Dendro)
   nickname_en: Night of the Sky
-  intent: onfield_dps_strict
-  targets: [Cyno, Keqing, Clorinde, Alhaitham, Tighnari, Yoimiya, HuTao, Ganyu, Neuvillette]
+  intent: onfield_dps_spread
+  targets: [Alhaitham, Tighnari, Nefer, Collei]
   slots:
     flower:
-      main_allowed: [Any]
-      substats_required_any_of: [CR, CD, EM]
-      substats_required_min: 2
+      main_allowed: [HP]
+      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_min: 3
     plume:
-      main_allowed: [Any]
-      substats_required_any_of: [CR, CD, EM]
-      substats_required_min: 2
+      main_allowed: [ATK]
+      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_min: 3
     sands:
-      main_allowed: [ATK%, EM, HP%]
-      substats_required_any_of: [CR, CD, EM, ER]
-      substats_required_min: 2
+      main_allowed: [EM, ATK%]
+      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_min: 3
     goblet:
-      main_allowed: [ElementalDMG%]
-      substats_required_any_of: [CR, CD, EM]
-      substats_required_min: 2
+      main_allowed: [DendroDMG%, ElementalDMG%, EM]
+      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_min: 3
     circlet:
       main_allowed: [CR, CD]
-      substats_required_any_of: [CR, CD]
-      substats_required_min: 2
+      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_min: 3
