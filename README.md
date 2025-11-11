@@ -7,6 +7,8 @@
 > - **天穹の顕現せし夜 / Night of the Sky**: オンフィールド DPS 向け、会心サブ重視
 > - **深廊の終曲 / Finale of the Deep**: 氷アタッカー（スカーク想定）向けのゼロエネルギー特化セット
 > - **長き夜の誓い / Song of Days Past**: 落下攻撃系アタッカー＋閑雲サポート向けセット
+> - **黒曜の秘典 / Obsidian Codex**: Nightsoul バフを活かすオンフィールド会心特化（ムアラニ/キィニチ/チャスカ等）
+> - **灰燼の都に立つ英雄の絵巻 / Ashen Hero Scroll**: Citlali/Iansan/Kachina 向けの ER+DEF サポーター＆バッファー
 
 ---
 
@@ -22,6 +24,10 @@
 | --- | --- | --- | --- |
 | `tsukuyo` | 月を紡ぐ夜の歌 | `support_offfield` | 付着役 / ヒーラー向けに ER/EM を広く確保 |
 | `tenkyu` | 天穹の顕現せし夜 | `onfield_dps` | 会心系サブが揃ったダメージ用候補の確保 |
+| `shinro` | 深廊の終曲 | `onfield_dps` | スカーク/マーヴィカなど氷メインDPSの会心確保 |
+| `naganoya` | 長き夜の誓い | `onfield_plunge` | 魈/嘉明/ヴァレサの落下攻撃特化ビルド |
+| `kokuyo-hiten` | 黒曜の秘典 | `onfield_dps` | Nightsoul 会心バフを活かすオンフィールドキャリー |
+| `haijin-eiyu-emaki` | 灰燼の都に立つ英雄の絵巻 | `support_reaction` | Citlali/Iansan/Kachina の ER+耐久サポート |
 
 各プリセットの想定キャラは YAML の `targets` を参照してください（ロック判定には影響しません）。
 
@@ -33,11 +39,21 @@ genshin-artifact-lock-presets/
 ├─ README.md               # このガイド
 ├─ AGENTS.md               # 貢献ルール（コマンド付き）
 ├─ docs/
-│  └─ ui-mapping.md        # UI と YAML の対応表
+│  ├─ ui-mapping.md        # UI と YAML の対応表
+│  ├─ lock-assist-survey-template.md  # 証跡メモの雛形
+│  ├─ haijin-eiyu-emaki-lock-assist-survey.md
+│  ├─ kokuyo-hiten-lock-assist-survey.md
+│  └─ reference/
+│        ├─ haijin-eiyu-emaki-lock/*.png
+│        └─ kokuyo-hiten-lock/*.png
 └─ presets/
    ├─ lock-presets.yml     # 配布用の結合ファイル
    ├─ tsukuyo/             # Moonweaver：recommended / setting1 / setting2
-   └─ tenkyu/              # Night of the Sky：recommended / setting1 / setting2
+   ├─ tenkyu/              # Night of the Sky：recommended / setting1 / setting2
+   ├─ shinro/              # Finale of the Deep 系列
+   ├─ naganoya/            # Song of Days Past 系列
+   ├─ kokuyo-hiten/        # Obsidian Codex 系列
+   └─ haijin-eiyu-emaki/   # Ashen Hero Scroll 系列
 ```
 
 ---
@@ -63,13 +79,15 @@ genshin-artifact-lock-presets/
 - **Lenient presets**: 支援セットは ER/EM を最低 2 本確保しつつ会心があれば拾う。
 - 改修時は `presets/lock-presets.yml` と個別ファイルを **同じ値** に保つこと。
 - `docs/ui-mapping.md` の省略名（CR/CD/ER/EM など）以外を使う場合は必ず同ファイルを更新。
+- **証跡メモ**: `docs/lock-assist-survey-template.md` を複製して各セット専用の調査メモを作成し、根拠URL・スクショとの対応を残す。
+- **スクリーンショット**: `docs/reference/<set-id>-lock/` に flower～circlet の5枚を配置して YAML への転記元を明示する。
 
 ---
 
 ## YAML Schema Cheatsheet
 ```yaml
 version: 1                 # schema version
-set_id: tsukuyo|tenkyu
+set_id: tsukuyo | tenkyu | naganoya | shinro | kokuyo-hiten | haijin-eiyu-emaki
 set_name_ja: ...           # 日本語名
 preset:
   key: recommended|setting1|setting2
@@ -94,6 +112,7 @@ preset:
 - `yq eval '.preset.slots | keys' presets/<set>/recommended.yml` で 5 部位が揃っているか確認。
 - `yq eval '.preset.slots[] | select(.substats_required_min == null)' presets -o=json` が空になることを確認。
 - コントリビューションフロー、命名規則、PR 要件は [`AGENTS.md`](./AGENTS.md) に詳細があります。
+- 新規セット調査時は `docs/lock-assist-survey-template.md` を使い、証跡ドキュメントと `docs/reference/<set-id>-lock/` のスクショ配置をセットで更新する。
 
 ---
 
