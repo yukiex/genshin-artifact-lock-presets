@@ -1,0 +1,35 @@
+version: 1
+set_id: haijin-eiyu-emaki
+set_name_ja: 灰燼の都に立つ英雄の絵巻
+preset:
+  key: setting2
+  name: Defensive Buffer Core
+  nickname_en: Ashen Hero Scroll
+  intent: support_buffer_tank
+  targets: [Kachina, Xilonen]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [ER, HP%, DEF%]
+      substats_required_min: 2
+      substats_required_all_of: [ER, DEF%]
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [ER, HP%, DEF%]
+      substats_required_min: 2
+      substats_required_all_of: [ER, DEF%]
+    sands:
+      main_allowed: [ER%, HP%, DEF%]
+      substats_required_any_of: [ER, HP%, DEF%]
+      substats_required_min: 2
+      substats_required_all_of: [ER, DEF%]
+    goblet:
+      main_allowed: [PyroDMG%, GeoDMG%, HP%, DEF%]
+      substats_required_any_of: [ER, HP%, DEF%]
+      substats_required_min: 2
+      substats_required_all_of: [ER, DEF%]
+    circlet:
+      main_allowed: [HP%, DEF%, Healing%]
+      substats_required_any_of: [ER, HP%, DEF%]
+      substats_required_min: 2
+      substats_required_all_of: [ER, DEF%]

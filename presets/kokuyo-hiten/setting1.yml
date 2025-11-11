@@ -1,0 +1,30 @@
+version: 1
+set_id: kokuyo-hiten
+set_name_ja: 黒曜の秘典
+preset:
+  key: setting1
+  name: Nightsoul On-field Carry
+  nickname_en: Obsidian Codex
+  intent: onfield_dps_carry
+  targets: [Marvica, Mualani, Kinich, Chasca, Varessa]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [ATK%, CR, CD]
+      substats_required_min: 3
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [ATK%, CR, CD]
+      substats_required_min: 3
+    sands:
+      main_allowed: [ATK%, EM]
+      substats_required_any_of: [ATK%, CR, CD]
+      substats_required_min: 3
+    goblet:
+      main_allowed: [PyroDMG%, HydroDMG%, DendroDMG%, ATK%]
+      substats_required_any_of: [ATK%, CR, CD]
+      substats_required_min: 3
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [ATK%, CR, CD]
+      substats_required_min: 3

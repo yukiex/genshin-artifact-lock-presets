@@ -1,0 +1,35 @@
+version: 1
+set_id: haijin-eiyu-emaki
+set_name_ja: 灰燼の都に立つ英雄の絵巻
+preset:
+  key: setting1
+  name: Nightfire Reaction Driver
+  nickname_en: Ashen Hero Scroll
+  intent: support_reaction_driver
+  targets: [Citlali, Iansan]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [ER, EM, ATK%, DEF%]
+      substats_required_min: 3
+      substats_required_all_of: [ER, EM]
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [ER, EM, ATK%, DEF%]
+      substats_required_min: 3
+      substats_required_all_of: [ER, EM]
+    sands:
+      main_allowed: [ER%, EM]
+      substats_required_any_of: [ER, EM, ATK%, DEF%]
+      substats_required_min: 3
+      substats_required_all_of: [ER, EM]
+    goblet:
+      main_allowed: [PyroDMG%, GeoDMG%, ElementalDMG%, EM]
+      substats_required_any_of: [ER, EM, ATK%, DEF%]
+      substats_required_min: 3
+      substats_required_all_of: [ER, EM]
+    circlet:
+      main_allowed: [EM, CR, CD]
+      substats_required_any_of: [ER, EM, ATK%, DEF%]
+      substats_required_min: 3
+      substats_required_all_of: [ER, EM]

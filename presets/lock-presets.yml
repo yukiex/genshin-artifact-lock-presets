@@ -369,3 +369,186 @@ sets:
             main_allowed: [CR, CD]
             substats_required_any_of: [CR, CD, EM, ATK%]
             substats_required_min: 3
+
+  - id: kokuyo-hiten
+    name_ja: 黒曜の秘典
+    nickname_en: "Obsidian Codex (nightsoul crit baseline)"
+    presets:
+      - key: recommended
+        name: Recommended (official baseline)
+        targets: [Marvica, Mualani, Kinich, Chasca, Varessa, Xilonen]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [HP%, ATK%, EM, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [HP%, ATK%, EM, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          sands:
+            main_allowed: [HP%, EM, ATK%]
+            substats_required_any_of: [HP%, ATK%, CR, CD, EM]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          goblet:
+            main_allowed: [PyroDMG%, HydroDMG%, DendroDMG%, ATK%]
+            substats_required_any_of: [HP%, ATK%, CR, CD, EM]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          circlet:
+            main_allowed: [CR, CD]
+            substats_required_any_of: [HP%, ATK%, EM, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+
+      - key: setting1
+        name: Nightsoul On-field Carry
+        targets: [Marvica, Mualani, Kinich, Chasca, Varessa]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 3
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 3
+          sands:
+            main_allowed: [ATK%, EM]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 3
+          goblet:
+            main_allowed: [PyroDMG%, HydroDMG%, DendroDMG%, ATK%]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 3
+          circlet:
+            main_allowed: [CR, CD]
+            substats_required_any_of: [ATK%, CR, CD]
+            substats_required_min: 3
+
+      - key: setting2
+        name: Nightsoul Support Anchor
+        targets: [Xilonen]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [ER, HP%, DEF%]
+            substats_required_min: 3
+            substats_required_all_of: [ER, HP%, DEF%]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [ER, HP%, DEF%]
+            substats_required_min: 3
+            substats_required_all_of: [ER, HP%, DEF%]
+          sands:
+            main_allowed: [ER%, HP%, DEF%]
+            substats_required_any_of: [ER, HP%, DEF%]
+            substats_required_min: 3
+            substats_required_all_of: [ER, HP%, DEF%]
+          goblet:
+            main_allowed: [HP%, DEF%]
+            substats_required_any_of: [ER, HP%, DEF%]
+            substats_required_min: 3
+            substats_required_all_of: [ER, HP%, DEF%]
+          circlet:
+            main_allowed: [HP%, DEF%, Healing%]
+            substats_required_any_of: [ER, HP%, DEF%]
+            substats_required_min: 3
+            substats_required_all_of: [ER, HP%, DEF%]
+
+  - id: haijin-eiyu-emaki
+    name_ja: 灰燼の都に立つ英雄の絵巻
+    nickname_en: "Ashen Hero Scroll (ER baseline support)"
+    presets:
+      - key: recommended
+        name: Recommended (official baseline)
+        targets: [Citlali, Iansan, Kachina]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [ATK%, DEF%, CR, CD, EM, ER]
+            substats_required_min: 2
+            substats_required_all_of: [ER, CR]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [ATK%, DEF%, CR, CD, EM, ER]
+            substats_required_min: 2
+            substats_required_all_of: [ER, CR]
+          sands:
+            main_allowed: [DEF%, EM, ATK%]
+            substats_required_any_of: [ATK%, DEF%, ER, EM]
+            substats_required_min: 2
+            substats_required_all_of: [ER]
+          goblet:
+            main_allowed: [ATK%, PyroDMG%, DEF%, GeoDMG%, EM]
+            substats_required_any_of: [ATK%, DEF%, ER, EM]
+            substats_required_min: 2
+            substats_required_all_of: [ER]
+          circlet:
+            main_allowed: [ATK%, DEF%, Healing%, EM]
+            substats_required_any_of: [ATK%, DEF%, ER, EM]
+            substats_required_min: 2
+            substats_required_all_of: [ER]
+
+      - key: setting1
+        name: Nightfire Reaction Driver
+        targets: [Citlali, Iansan]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [ER, EM, ATK%, DEF%]
+            substats_required_min: 3
+            substats_required_all_of: [ER, EM]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [ER, EM, ATK%, DEF%]
+            substats_required_min: 3
+            substats_required_all_of: [ER, EM]
+          sands:
+            main_allowed: [ER%, EM]
+            substats_required_any_of: [ER, EM, ATK%, DEF%]
+            substats_required_min: 3
+            substats_required_all_of: [ER, EM]
+          goblet:
+            main_allowed: [PyroDMG%, GeoDMG%, ElementalDMG%, EM]
+            substats_required_any_of: [ER, EM, ATK%, DEF%]
+            substats_required_min: 3
+            substats_required_all_of: [ER, EM]
+          circlet:
+            main_allowed: [EM, CR, CD]
+            substats_required_any_of: [ER, EM, ATK%, DEF%]
+            substats_required_min: 3
+            substats_required_all_of: [ER, EM]
+
+      - key: setting2
+        name: Defensive Buffer Core
+        targets: [Kachina, Xilonen]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [ER, HP%, DEF%]
+            substats_required_min: 2
+            substats_required_all_of: [ER, DEF%]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [ER, HP%, DEF%]
+            substats_required_min: 2
+            substats_required_all_of: [ER, DEF%]
+          sands:
+            main_allowed: [ER%, HP%, DEF%]
+            substats_required_any_of: [ER, HP%, DEF%]
+            substats_required_min: 2
+            substats_required_all_of: [ER, DEF%]
+          goblet:
+            main_allowed: [PyroDMG%, GeoDMG%, HP%, DEF%]
+            substats_required_any_of: [ER, HP%, DEF%]
+            substats_required_min: 2
+            substats_required_all_of: [ER, DEF%]
+          circlet:
+            main_allowed: [HP%, DEF%, Healing%]
+            substats_required_any_of: [ER, HP%, DEF%]
+            substats_required_min: 2
+            substats_required_all_of: [ER, DEF%]

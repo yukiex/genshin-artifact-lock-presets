@@ -1,0 +1,35 @@
+version: 1
+set_id: kokuyo-hiten
+set_name_ja: 黒曜の秘典
+preset:
+  key: setting2
+  name: Nightsoul Support Anchor
+  nickname_en: Obsidian Codex
+  intent: support_offfield_tanky
+  targets: [Xilonen]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [ER, HP%, DEF%]
+      substats_required_min: 3
+      substats_required_all_of: [ER, HP%, DEF%]
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [ER, HP%, DEF%]
+      substats_required_min: 3
+      substats_required_all_of: [ER, HP%, DEF%]
+    sands:
+      main_allowed: [ER%, HP%, DEF%]
+      substats_required_any_of: [ER, HP%, DEF%]
+      substats_required_min: 3
+      substats_required_all_of: [ER, HP%, DEF%]
+    goblet:
+      main_allowed: [HP%, DEF%]
+      substats_required_any_of: [ER, HP%, DEF%]
+      substats_required_min: 3
+      substats_required_all_of: [ER, HP%, DEF%]
+    circlet:
+      main_allowed: [HP%, DEF%, Healing%]
+      substats_required_any_of: [ER, HP%, DEF%]
+      substats_required_min: 3
+      substats_required_all_of: [ER, HP%, DEF%]

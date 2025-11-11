@@ -1,0 +1,35 @@
+version: 1
+set_id: haijin-eiyu-emaki
+set_name_ja: 灰燼の都に立つ英雄の絵巻
+preset:
+  key: recommended
+  name: Recommended (official baseline)
+  nickname_en: Ashen Hero Scroll
+  intent: support_reaction
+  targets: [Citlali, Iansan, Kachina]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [ATK%, DEF%, CR, CD, EM, ER]
+      substats_required_min: 2
+      substats_required_all_of: [ER, CR]
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [ATK%, DEF%, CR, CD, EM, ER]
+      substats_required_min: 2
+      substats_required_all_of: [ER, CR]
+    sands:
+      main_allowed: [DEF%, EM, ATK%]
+      substats_required_any_of: [ATK%, DEF%, ER, EM]
+      substats_required_min: 2
+      substats_required_all_of: [ER]
+    goblet:
+      main_allowed: [ATK%, PyroDMG%, DEF%, GeoDMG%, EM]
+      substats_required_any_of: [ATK%, DEF%, ER, EM]
+      substats_required_min: 2
+      substats_required_all_of: [ER]
+    circlet:
+      main_allowed: [ATK%, DEF%, Healing%, EM]
+      substats_required_any_of: [ATK%, DEF%, ER, EM]
+      substats_required_min: 2
+      substats_required_all_of: [ER]

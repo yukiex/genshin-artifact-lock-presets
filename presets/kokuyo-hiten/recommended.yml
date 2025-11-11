@@ -1,0 +1,35 @@
+version: 1
+set_id: kokuyo-hiten
+set_name_ja: 黒曜の秘典
+preset:
+  key: recommended
+  name: Recommended (official baseline)
+  nickname_en: Obsidian Codex
+  intent: onfield_dps
+  targets: [Marvica, Mualani, Kinich, Chasca, Varessa, Xilonen]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [HP%, ATK%, EM, CR, CD]
+      substats_required_min: 2
+      substats_required_all_of: [CR, CD]
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [HP%, ATK%, EM, CR, CD]
+      substats_required_min: 2
+      substats_required_all_of: [CR, CD]
+    sands:
+      main_allowed: [HP%, EM, ATK%]
+      substats_required_any_of: [HP%, ATK%, CR, CD, EM]
+      substats_required_min: 2
+      substats_required_all_of: [CR, CD]
+    goblet:
+      main_allowed: [PyroDMG%, HydroDMG%, DendroDMG%, ATK%]
+      substats_required_any_of: [HP%, ATK%, CR, CD, EM]
+      substats_required_min: 2
+      substats_required_all_of: [CR, CD]
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [HP%, ATK%, EM, CR, CD]
+      substats_required_min: 2
+      substats_required_all_of: [CR, CD]
