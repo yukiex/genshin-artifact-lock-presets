@@ -1,0 +1,36 @@
+version: 1
+set_id: wanderers-troupe
+set_name_ja: 大地を流浪する楽団
+preset:
+  key: recommended
+  name: Recommended (official baseline)
+  nickname_en: Wanderer's Troupe
+  intent: onfield_dps
+  targets: [Ganyu, Tighnari, Yanfei, Klee, Lyney, Neuvillette, Sethos,
+            Chasca, Amber, Barbara]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [HP%, ATK%, ER, EM, CR, CD]
+      substats_required_min: 2
+      substats_required_all_of: [CR, CD]
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [HP%, ATK%, ER, EM, CR, CD]
+      substats_required_min: 2
+      substats_required_all_of: [CR, CD]
+    sands:
+      main_allowed: [HP%, EM, ATK%]
+      substats_required_any_of: [HP%, ATK%, CR, CD, ER, EM]
+      substats_required_min: 2
+      substats_required_all_of: []
+    goblet:
+      main_allowed: [HP%, ATK%, PyroDMG%, DendroDMG%, CryoDMG%, EM]
+      substats_required_any_of: [HP%, ATK%, CR, CD, ER, EM]
+      substats_required_min: 2
+      substats_required_all_of: []
+    circlet:
+      main_allowed: [HP%, CR, EM, CD]
+      substats_required_any_of: [HP%, ATK%, CR, CD, ER, EM]
+      substats_required_min: 2
+      substats_required_all_of: []

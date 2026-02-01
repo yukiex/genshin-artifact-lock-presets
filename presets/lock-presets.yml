@@ -62,7 +62,8 @@ sets:
             substats_required_min: 3
             substats_required_all_of: [ER]
           goblet:
-            main_allowed: [ElectroDMG%, HydroDMG%, ElementalDMG%, EM]
+            main_allowed: [PyroDMG%, HydroDMG%, ElectroDMG%, AnemoDMG%, CryoDMG%,
+                           GeoDMG%, DendroDMG%, EM]
             substats_required_any_of: [ER, EM, HP%, ATK%, CR, CD]
             substats_required_min: 3
             substats_required_all_of: [ER]
@@ -92,7 +93,8 @@ sets:
             substats_required_min: 3
             substats_required_all_of: [EM]
           goblet:
-            main_allowed: [DendroDMG%, ElementalDMG%, EM]
+            main_allowed: [PyroDMG%, HydroDMG%, ElectroDMG%, AnemoDMG%, CryoDMG%,
+                           GeoDMG%, DendroDMG%, EM]
             substats_required_any_of: [EM, ER, ATK%, CR, CD]
             substats_required_min: 3
             substats_required_all_of: [EM]
@@ -128,12 +130,13 @@ sets:
             substats_required_min: 2
             substats_required_all_of: [CR, CD]
           goblet:
-            main_allowed: [ElementalDMG%]
+            main_allowed: [PyroDMG%, HydroDMG%, ElectroDMG%, AnemoDMG%, CryoDMG%,
+                           GeoDMG%, DendroDMG%]
             substats_required_any_of: [CR, CD, ER, EM]
             substats_required_min: 2
             substats_required_all_of: [CR, CD]
           circlet:
-            main_allowed: [CR, CD]
+            main_allowed: [CR, CD, EM]
             substats_required_any_of: [CR, CD, ER, EM]
             substats_required_min: 2
             substats_required_all_of: [CR, CD]
@@ -155,7 +158,8 @@ sets:
             substats_required_any_of: [CR, CD, EM, ATK%, ER]
             substats_required_min: 3
           goblet:
-            main_allowed: [ElectroDMG%, ElementalDMG%, EM]
+            main_allowed: [PyroDMG%, HydroDMG%, ElectroDMG%, AnemoDMG%, CryoDMG%,
+                           GeoDMG%, DendroDMG%, EM]
             substats_required_any_of: [CR, CD, EM, ATK%, ER]
             substats_required_min: 3
           circlet:
@@ -335,7 +339,8 @@ sets:
             substats_required_min: 2
             substats_required_all_of: [CR]
           goblet:
-            main_allowed: [ElementalDMG%, ATK%]
+            main_allowed: [PyroDMG%, HydroDMG%, ElectroDMG%, AnemoDMG%, CryoDMG%,
+                           GeoDMG%, DendroDMG%, ATK%]
             substats_required_any_of: [ATK%, CR, CD, ER]
             substats_required_min: 2
             substats_required_all_of: [CR]
@@ -362,7 +367,8 @@ sets:
             substats_required_any_of: [CR, CD, EM, ATK%]
             substats_required_min: 3
           goblet:
-            main_allowed: [DendroDMG%, ElementalDMG%, EM]
+            main_allowed: [PyroDMG%, HydroDMG%, ElectroDMG%, AnemoDMG%, CryoDMG%,
+                           GeoDMG%, DendroDMG%, EM]
             substats_required_any_of: [CR, CD, EM, ATK%]
             substats_required_min: 3
           circlet:
@@ -513,7 +519,8 @@ sets:
             substats_required_min: 3
             substats_required_all_of: [ER, EM]
           goblet:
-            main_allowed: [PyroDMG%, GeoDMG%, ElementalDMG%, EM]
+            main_allowed: [PyroDMG%, HydroDMG%, ElectroDMG%, AnemoDMG%, CryoDMG%,
+                           GeoDMG%, DendroDMG%, EM]
             substats_required_any_of: [ER, EM, ATK%, DEF%]
             substats_required_min: 3
             substats_required_all_of: [ER, EM]
@@ -552,3 +559,100 @@ sets:
             substats_required_any_of: [ER, HP%, DEF%]
             substats_required_min: 2
             substats_required_all_of: [ER, DEF%]
+
+  - id: wanderers-troupe
+    name_ja: 大地を流浪する楽団
+    nickname_en: "Wanderer's Troupe (charged attack DPS: bow/catalyst)"
+    presets:
+      - key: recommended
+        name: Recommended (official baseline)
+        targets: [Ganyu, Tighnari, Yanfei, Klee, Lyney, Neuvillette, Sethos,
+                  Chasca, Amber, Barbara]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [HP%, ATK%, ER, EM, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [HP%, ATK%, ER, EM, CR, CD]
+            substats_required_min: 2
+            substats_required_all_of: [CR, CD]
+          sands:
+            main_allowed: [HP%, EM, ATK%]
+            substats_required_any_of: [HP%, ATK%, CR, CD, ER, EM]
+            substats_required_min: 2
+            substats_required_all_of: []
+          goblet:
+            main_allowed: [HP%, ATK%, PyroDMG%, DendroDMG%, CryoDMG%, EM]
+            substats_required_any_of: [HP%, ATK%, CR, CD, ER, EM]
+            substats_required_min: 2
+            substats_required_all_of: []
+          circlet:
+            main_allowed: [HP%, CR, EM, CD]
+            substats_required_any_of: [HP%, ATK%, CR, CD, ER, EM]
+            substats_required_min: 2
+            substats_required_all_of: []
+
+      - key: setting1
+        name: Charged Crit Core
+        targets: [Ganyu, Yanfei, Klee, Lyney, Neuvillette, Chasca]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [CR, CD, ATK%, EM, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [CR, CD, ATK%, EM, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+          sands:
+            main_allowed: [ATK%, EM]
+            substats_required_any_of: [CR, CD, ATK%, EM, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+          goblet:
+            main_allowed: [PyroDMG%, HydroDMG%, ElectroDMG%, AnemoDMG%, CryoDMG%,
+                           GeoDMG%, DendroDMG%]
+            substats_required_any_of: [CR, CD, ATK%, EM, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+          circlet:
+            main_allowed: [CR, CD]
+            substats_required_any_of: [CR, CD, ATK%, EM, ER]
+            substats_required_min: 3
+            substats_required_all_of: [CR, CD]
+
+      - key: setting2
+        name: Aggravate EM Charged
+        targets: [Sethos, Tighnari]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [EM, CR, CD, ATK%, ER]
+            substats_required_min: 3
+            substats_required_all_of: [EM]
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [EM, CR, CD, ATK%, ER]
+            substats_required_min: 3
+            substats_required_all_of: [EM]
+          sands:
+            main_allowed: [EM]
+            substats_required_any_of: [EM, CR, CD, ATK%, ER]
+            substats_required_min: 3
+            substats_required_all_of: []
+          goblet:
+            main_allowed: [PyroDMG%, HydroDMG%, ElectroDMG%, AnemoDMG%, CryoDMG%,
+                           GeoDMG%, DendroDMG%, EM]
+            substats_required_any_of: [EM, CR, CD, ATK%, ER]
+            substats_required_min: 3
+            substats_required_all_of: []
+          circlet:
+            main_allowed: [CR, CD]
+            substats_required_any_of: [EM, CR, CD, ATK%, ER]
+            substats_required_min: 3
+            substats_required_all_of: []

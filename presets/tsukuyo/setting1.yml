@@ -24,7 +24,8 @@ preset:
       substats_required_min: 3
       substats_required_all_of: [ER]
     goblet:
-      main_allowed: [ElectroDMG%, HydroDMG%, ElementalDMG%, EM]
+      main_allowed: [PyroDMG%, HydroDMG%, ElectroDMG%, AnemoDMG%, CryoDMG%,
+                     GeoDMG%, DendroDMG%, EM]
       substats_required_any_of: [ER, EM, HP%, ATK%, CR, CD]
       substats_required_min: 3
       substats_required_all_of: [ER]

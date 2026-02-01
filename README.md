@@ -9,6 +9,7 @@
 > - **長き夜の誓い / Song of Days Past**: 落下攻撃系アタッカー＋閑雲サポート向けセット
 > - **黒曜の秘典 / Obsidian Codex**: Nightsoul バフを活かすオンフィールド会心特化（ムアラニ/キィニチ/チャスカ等）
 > - **灰燼の都に立つ英雄の絵巻 / Ashen Hero Scroll**: Citlali/Iansan/Kachina 向けの ER+DEF サポーター＆バッファー
+> - **大地を流浪する楽団 / Wanderer's Troupe**: 弓/法器重撃アタッカー向け、会心＋熟知の両対応
 
 ---
 
@@ -28,6 +29,7 @@
 | `naganoya` | 長き夜の誓い | `onfield_plunge` | 魈/嘉明/ヴァレサの落下攻撃特化ビルド |
 | `kokuyo-hiten` | 黒曜の秘典 | `onfield_dps` | Nightsoul 会心バフを活かすオンフィールドキャリー |
 | `haijin-eiyu-emaki` | 灰燼の都に立つ英雄の絵巻 | `support_reaction` | Citlali/Iansan/Kachina の ER+耐久サポート |
+| `wanderers-troupe` | 大地を流浪する楽団 | `onfield_dps` | 弓/法器の重撃アタッカー向け会心/熟知 |
 
 各プリセットの想定キャラは YAML の `targets` を参照してください（ロック判定には影響しません）。
 
@@ -53,7 +55,8 @@ genshin-artifact-lock-presets/
    ├─ shinro/              # Finale of the Deep 系列
    ├─ naganoya/            # Song of Days Past 系列
    ├─ kokuyo-hiten/        # Obsidian Codex 系列
-   └─ haijin-eiyu-emaki/   # Ashen Hero Scroll 系列
+   ├─ haijin-eiyu-emaki/   # Ashen Hero Scroll 系列
+   └─ wanderers-troupe/    # Wanderer's Troupe 系列
 ```
 
 ---
@@ -88,6 +91,7 @@ genshin-artifact-lock-presets/
 ```yaml
 version: 1                 # schema version
 set_id: tsukuyo | tenkyu | naganoya | shinro | kokuyo-hiten | haijin-eiyu-emaki
+        | wanderers-troupe
 set_name_ja: ...           # 日本語名
 preset:
   key: recommended|setting1|setting2
@@ -97,7 +101,7 @@ preset:
   targets: [ ... ]         # 想定キャラ（任意）
       slots:
         flower|plume|sands|goblet|circlet:
-          main_allowed: [Any|ER%|ElementalDMG% ...]   # UI フィルタのヒント
+          main_allowed: [Any|ER%|<Element>DMG% ...]  # UI フィルタのヒント
           substats_required_any_of: [CR, CD, ER, EM]  # UI でチェックする候補
           substats_required_min: 1..3                 # いずれか N 個以上
           substats_required_all_of: [ER, EM]          # “必須ステータス”として全て含める
