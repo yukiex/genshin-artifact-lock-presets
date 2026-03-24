@@ -17,6 +17,7 @@
 - 1セットにつきゲーム内推奨 (`recommended`) と、用途別にチューニングした `setting1` / `setting2`（キャラクターアーキタイプ向けカスタム）を提供
 - UI と YAML の対応は [`docs/ui-mapping.md`](./docs/ui-mapping.md) に表形式で整理
 - `presets/lock-presets.yml` はすべてのセットを 1 ファイルにまとめた「配布用カタログ」
+- 追加予定の対象セットは [`docs/target-artifact-sets.md`](./docs/target-artifact-sets.md) で管理
 
 ---
 
@@ -32,6 +33,11 @@
 | `wanderers-troupe` | 大地を流浪する楽団 | `onfield_dps` | 弓/法器の重撃アタッカー向け会心/熟知 |
 
 各プリセットの想定キャラは YAML の `targets` を参照してください（ロック判定には影響しません）。
+
+---
+
+## Target Backlog
+今後の追加対象セットは [`docs/target-artifact-sets.md`](./docs/target-artifact-sets.md) を参照してください。
 
 ---
 

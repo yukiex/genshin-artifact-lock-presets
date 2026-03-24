@@ -49,7 +49,10 @@ Open these files before making any edits:
 4. `docs/lock-assist-survey-template.md`
    - Copy this template before writing any new survey note.
 
-5. One complete existing example
+5. `docs/target-artifact-sets.md` if it exists
+   - Use this file to confirm whether the requested set is already tracked and what English name or candidate `set_id` the repo intends to use.
+
+6. One complete existing example
    - Open one existing set end to end:
      - `presets/night-of-the-sky/recommended.yml`
      - `presets/night-of-the-sky/setting1.yml`
@@ -57,7 +60,7 @@ Open these files before making any edits:
      - `presets/lock-presets.yml`
      - one survey note such as `docs/obsidian-codex-lock-assist-survey.md`
 
-6. `references/checklist.md`
+7. `references/checklist.md`
    - Use the checklist in this skill directory as the final done-definition and source-quality gate.
 
 ## Source Priority
@@ -326,7 +329,7 @@ Do not introduce new abbreviations or field names unless you also update:
 
 ## Workflow
 
-1. Read `AGENTS.md`, `README.md`, `docs/ui-mapping.md`, `docs/lock-assist-survey-template.md`, and `references/checklist.md`.
+1. Read `AGENTS.md`, `README.md`, `docs/ui-mapping.md`, `docs/lock-assist-survey-template.md`, `docs/target-artifact-sets.md` if present, and `references/checklist.md`.
 2. Open one full existing example set and survey note.
 3. Confirm set names and decide `set_id`.
 4. Create:
