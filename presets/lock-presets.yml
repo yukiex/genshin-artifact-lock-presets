@@ -166,6 +166,31 @@ sets:
             main_allowed: [CR, CD]
             substats_required_any_of: [CR, CD, EM, ATK%]
             substats_required_min: 3
+
+      - key: setting2
+        name: Lunar Crystallize Driver (Geo DEF)
+        targets: [Shihaku]
+        slots:
+          flower:
+            main_allowed: [HP]
+            substats_required_any_of: [CR, CD, DEF%, EM]
+            substats_required_min: 3
+          plume:
+            main_allowed: [ATK]
+            substats_required_any_of: [CR, CD, DEF%, EM]
+            substats_required_min: 3
+          sands:
+            main_allowed: [DEF%, EM]
+            substats_required_any_of: [CR, CD, DEF%, EM, ER]
+            substats_required_min: 3
+          goblet:
+            main_allowed: [DEF%, EM]
+            substats_required_any_of: [CR, CD, DEF%, EM, ER]
+            substats_required_min: 3
+          circlet:
+            main_allowed: [CR, CD]
+            substats_required_any_of: [CR, CD, DEF%, EM]
+            substats_required_min: 3
   - id: shinro
     name_ja: 深廊の終曲
     nickname_en: Finale of the Deep (Cryo DMG; energy drain gimmick)

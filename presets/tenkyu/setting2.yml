@@ -3,29 +3,28 @@ set_id: tenkyu
 set_name_ja: 天穹の顕現せし夜
 preset:
   key: setting2
-  name: Spread Driver (Dendro)
+  name: Lunar Crystallize Driver (Geo DEF)
   nickname_en: Night of the Sky
-  intent: onfield_dps_spread
-  targets: [Alhaitham, Tighnari, Nefer, Collei]
+  intent: onfield_dps_lunar_crystallize
+  targets: [Shihaku]
   slots:
     flower:
       main_allowed: [HP]
-      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_any_of: [CR, CD, DEF%, EM]
       substats_required_min: 3
     plume:
       main_allowed: [ATK]
-      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_any_of: [CR, CD, DEF%, EM]
       substats_required_min: 3
     sands:
-      main_allowed: [EM, ATK%]
-      substats_required_any_of: [CR, CD, EM, ATK%]
+      main_allowed: [DEF%, EM]
+      substats_required_any_of: [CR, CD, DEF%, EM, ER]
       substats_required_min: 3
     goblet:
-      main_allowed: [PyroDMG%, HydroDMG%, ElectroDMG%, AnemoDMG%, CryoDMG%,
-                     GeoDMG%, DendroDMG%, EM]
-      substats_required_any_of: [CR, CD, EM, ATK%]
+      main_allowed: [DEF%, EM]
+      substats_required_any_of: [CR, CD, DEF%, EM, ER]
       substats_required_min: 3
     circlet:
       main_allowed: [CR, CD]
-      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_any_of: [CR, CD, DEF%, EM]
       substats_required_min: 3
