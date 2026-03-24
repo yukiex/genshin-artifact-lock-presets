@@ -1,0 +1,4 @@
+interface:
+  display_name: "Genshin Lock Set Authoring"
+  short_description: "原神ロックアシスト用セット追加の調査とYAML反映手順"
+  default_prompt: "Use $genshin-lock-set-authoring to add a new artifact set preset to this repository."

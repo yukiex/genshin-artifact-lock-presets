@@ -3,10 +3,12 @@
 セット: **[日本語セット名] ([English Set Name])**
 
 ## 1. 推奨設定の根拠
-- [ ] `docs/reference/[set-id]-lock/` に部位ごとのスクリーンショットを配置（flower / plume / sands / goblet / circlet）。
-- [ ] 下表に、各画像から読み取った主ステータス・サブステ条件・必須ステータスを転記。
+- Evidence source: [ ] 静止スクリーンショット [ ] 画面録画 [ ] 人手メモ
+- Evidence level: final | provisional
+- [ ] 静止スクリーンショットがある場合は `docs/reference/[set-id]-lock/` に配置（flower / plume / sands / goblet / circlet）。
+- [ ] 下表に、採用した証跡から読み取った主ステータス・サブステ条件・必須ステータスを転記。
 
-| スロット | 画像ファイル | 主ステータス | サブステ候補 (いずれか2個) | 必須ステータス |
+| スロット | 証跡ファイル / メモ | 主ステータス | サブステ候補 (いずれか2個) | 必須ステータス |
 | --- | --- | --- | --- | --- |
 | 花 | `スクリーンショット YYYY-MM-DD hhmmss.png` | HP | [例: 攻撃力% / 会心率 / 会心ダメージ] | [例: 会心率, 会心ダメージ] |
 | 羽 | `スクリーンショット YYYY-MM-DD hhmmss.png` | 攻撃力 | [同上] | [同上] |
@@ -15,6 +17,7 @@
 | 冠 | `スクリーンショット YYYY-MM-DD hhmmss.png` | [例: 会心率 / 会心ダメージ] | [同上] | [同上] |
 
 - YAML 反映時は `presets/[set-id]/recommended.yml` と `presets/lock-presets.yml` の両方を更新する。
+- 静止スクリーンショット以外を使う場合は、必ず `Evidence level: provisional` と明記する。
 - UI の文言（「次の追加ステータスのうち、いずれかN個を含む。かつ必須ステータスをすべて含む」など）を正確に記録し、`substats_required_any_of`、`substats_required_min`、`substats_required_all_of` に適切にマッピングする。
 
 ## 2. Custom Preset 調査

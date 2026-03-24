@@ -38,20 +38,28 @@ Strip player UIDs or HoYo account data from screenshots, and avoid committing pe
   - おすすめキャラクター一覧
   - ビルドタイプ別の推奨ステータス（例: オンフィールドDPS、サポーター、元素反応ドライバー）
 - 調査結果を元に、異なるアーキタイプ向けの2つの設定を作成し、調査メモに根拠URLを明記
+- `setting1` / `setting2` はスクリーンショット待ちをせず先行作成してよい
 - **運用前提**: 推奨（Recommended）を常に有効化し、必要に応じて setting1/2 を追加でオン
 
-### 3. スクリーンショット撮影 (人間)
-- ゲーム内「セットロック設定」画面で推奨設定を開く
-- 各部位（flower/plume/sands/goblet/circlet）のスクリーンショットを `docs/reference/[set-id]-lock/` に保存
+### 3. 推奨設定の証跡収集 (人間)
+- `recommended` の証跡優先順位は以下とする
+  1. 5部位の静止スクリーンショット
+  2. 5部位が確認できる画面録画
+  3. 人手で転記した部位別設定メモ
+- 1 が無い場合でも `presets/[set-id]/` の作成は許可する
+- 2 または 3 を使って `recommended.yml` を作る場合は、調査メモに `Evidence level: provisional` と明記する
+- 可能なら静止スクリーンショットを `docs/reference/[set-id]-lock/` に保存する
 
 ### 4. 推奨設定の調査と転記 (AI)
-1. スクリーンショットから主ステータス・サブステ候補・必須ステータスを読み取り、調査メモの表に記入
-2. UI の文言（「いずれかN個を含む」「必須ステータスをすべて含む」）を正確に記録
-3. 読み取った値を `presets/[set-id]/recommended.yml` に反映：
+1. 証跡は優先順位 1→2→3 で採用し、使用した証跡種別を調査メモに記録する
+2. スクリーンショット・録画・人手メモから主ステータス・サブステ候補・必須ステータスを読み取り、調査メモの表に記入
+3. 静止スクリーンショット以外を使う場合は `Evidence level: provisional` を調査メモに明記する
+4. `recommended.yml` に読み取った値を反映する
    - 主ステータス → `main_allowed`
    - 必須ステータス（黄色ハイライト） → `substats_required_all_of`
    - サブステ候補 → `substats_required_any_of` と `substats_required_min`
-4. `presets/lock-presets.yml` の対応セクションも同じ値に更新
+5. UI の文言（「いずれかN個を含む」「必須ステータスをすべて含む」）を正確に記録する
+6. `presets/lock-presets.yml` の対応セクションも同じ値に更新
 
 ### 5. ドキュメント更新 (AI)
 - 新しい略語やフィールドを導入した場合は `docs/ui-mapping.md` を更新
