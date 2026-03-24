@@ -1,0 +1,35 @@
+version: 1
+set_id: tenacity-of-the-millelith
+set_name_ja: 千岩牢固
+preset:
+  key: setting1
+  name: Shield Buffer (HP stack)
+  nickname_en: Tenacity of the Millelith
+  intent: support_shield_hp
+  targets: [Zhongli, Layla, Kirara]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [HP%, ER, CR]
+      substats_required_min: 2
+      substats_required_all_of: [HP%]
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [HP%, ER, CR]
+      substats_required_min: 2
+      substats_required_all_of: [HP%]
+    sands:
+      main_allowed: [HP%, ER%]
+      substats_required_any_of: [HP%, ER, CR]
+      substats_required_min: 2
+      substats_required_all_of: [HP%]
+    goblet:
+      main_allowed: [HP%]
+      substats_required_any_of: [HP%, ER, CR]
+      substats_required_min: 2
+      substats_required_all_of: [HP%]
+    circlet:
+      main_allowed: [HP%, CR]
+      substats_required_any_of: [HP%, ER, CR]
+      substats_required_min: 2
+      substats_required_all_of: [HP%]
