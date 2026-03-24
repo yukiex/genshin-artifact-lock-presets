@@ -23,12 +23,12 @@
 ## Preset Catalog
 | Set ID | 日本語名 | 目的 / Intent | サンプル用途 |
 | --- | --- | --- | --- |
-| `tsukuyo` | 月を紡ぐ夜の歌 | `support_offfield` | 付着役 / ヒーラー向けに ER/EM を広く確保 |
-| `tenkyu` | 天穹の顕現せし夜 | `onfield_dps` | 会心系サブが揃ったダメージ用候補の確保 |
-| `shinro` | 深廊の終曲 | `onfield_dps` | スカーク/マーヴィカなど氷メインDPSの会心確保 |
-| `naganoya` | 長き夜の誓い | `onfield_plunge` | 魈/嘉明/ヴァレサの落下攻撃特化ビルド |
-| `kokuyo-hiten` | 黒曜の秘典 | `onfield_dps` | Nightsoul 会心バフを活かすオンフィールドキャリー |
-| `haijin-eiyu-emaki` | 灰燼の都に立つ英雄の絵巻 | `support_reaction` | Citlali/Iansan/Kachina の ER+耐久サポート |
+| `moonweaver` | 月を紡ぐ夜の歌 | `support_offfield` | 付着役 / ヒーラー向けに ER/EM を広く確保 |
+| `night-of-the-sky` | 天穹の顕現せし夜 | `onfield_dps` | 会心系サブが揃ったダメージ用候補の確保 |
+| `finale-of-the-deep` | 深廊の終曲 | `onfield_dps` | スカーク/マーヴィカなど氷メインDPSの会心確保 |
+| `song-of-days-past` | 長き夜の誓い | `onfield_plunge` | 魈/嘉明/ヴァレサの落下攻撃特化ビルド |
+| `obsidian-codex` | 黒曜の秘典 | `onfield_dps` | Nightsoul 会心バフを活かすオンフィールドキャリー |
+| `ashen-hero-scroll` | 灰燼の都に立つ英雄の絵巻 | `support_reaction` | Citlali/Iansan/Kachina の ER+耐久サポート |
 | `wanderers-troupe` | 大地を流浪する楽団 | `onfield_dps` | 弓/法器の重撃アタッカー向け会心/熟知 |
 
 各プリセットの想定キャラは YAML の `targets` を参照してください（ロック判定には影響しません）。
@@ -43,19 +43,19 @@ genshin-artifact-lock-presets/
 ├─ docs/
 │  ├─ ui-mapping.md        # UI と YAML の対応表
 │  ├─ lock-assist-survey-template.md  # 証跡メモの雛形
-│  ├─ haijin-eiyu-emaki-lock-assist-survey.md
-│  ├─ kokuyo-hiten-lock-assist-survey.md
+│  ├─ ashen-hero-scroll-lock-assist-survey.md
+│  ├─ obsidian-codex-lock-assist-survey.md
 │  └─ reference/
-│        ├─ haijin-eiyu-emaki-lock/*.png
-│        └─ kokuyo-hiten-lock/*.png
+│        ├─ ashen-hero-scroll-lock/*.png
+│        └─ obsidian-codex-lock/*.png
 └─ presets/
    ├─ lock-presets.yml     # 配布用の結合ファイル
-   ├─ tsukuyo/             # Moonweaver：recommended / setting1 / setting2
-   ├─ tenkyu/              # Night of the Sky：recommended / setting1 / setting2
-   ├─ shinro/              # Finale of the Deep 系列
-   ├─ naganoya/            # Song of Days Past 系列
-   ├─ kokuyo-hiten/        # Obsidian Codex 系列
-   ├─ haijin-eiyu-emaki/   # Ashen Hero Scroll 系列
+   ├─ moonweaver/             # Moonweaver：recommended / setting1 / setting2
+   ├─ night-of-the-sky/              # Night of the Sky：recommended / setting1 / setting2
+   ├─ finale-of-the-deep/              # Finale of the Deep 系列
+   ├─ song-of-days-past/            # Song of Days Past 系列
+   ├─ obsidian-codex/        # Obsidian Codex 系列
+   ├─ ashen-hero-scroll/   # Ashen Hero Scroll 系列
    └─ wanderers-troupe/    # Wanderer's Troupe 系列
 ```
 
@@ -67,7 +67,7 @@ genshin-artifact-lock-presets/
    git clone https://github.com/yukiex/genshin-artifact-lock-presets.git
    cd genshin-artifact-lock-presets
    ```
-2. Open `presets/<set>/<preset>.yml` (例: `presets/tenkyu/setting2.yml`) で狙う部位と閾値を確認。
+2. Open `presets/<set>/<preset>.yml` (例: `presets/night-of-the-sky/setting2.yml`) で狙う部位と閾値を確認。
 3. ゲーム内「ロックアシスト」で対象セットを選択し、部位ごとに:
    - YAML の `substats_required_any_of` に載っているサブステをチェックで指定
    - `substats_required_min` と同じ数値を UI の「いずれか N 個以上」に入力
@@ -90,7 +90,7 @@ genshin-artifact-lock-presets/
 ## YAML Schema Cheatsheet
 ```yaml
 version: 1                 # schema version
-set_id: tsukuyo | tenkyu | naganoya | shinro | kokuyo-hiten | haijin-eiyu-emaki
+set_id: moonweaver | night-of-the-sky | song-of-days-past | finale-of-the-deep | obsidian-codex | ashen-hero-scroll
         | wanderers-troupe
 set_name_ja: ...           # 日本語名
 preset:

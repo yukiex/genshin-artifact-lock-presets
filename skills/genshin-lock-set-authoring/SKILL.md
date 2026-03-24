@@ -51,11 +51,11 @@ Open these files before making any edits:
 
 5. One complete existing example
    - Open one existing set end to end:
-     - `presets/tenkyu/recommended.yml`
-     - `presets/tenkyu/setting1.yml`
-     - `presets/tenkyu/setting2.yml`
+     - `presets/night-of-the-sky/recommended.yml`
+     - `presets/night-of-the-sky/setting1.yml`
+     - `presets/night-of-the-sky/setting2.yml`
      - `presets/lock-presets.yml`
-     - one survey note such as `docs/kokuyo-hiten-lock-assist-survey.md`
+     - one survey note such as `docs/obsidian-codex-lock-assist-survey.md`
 
 6. `references/checklist.md`
    - Use the checklist in this skill directory as the final done-definition and source-quality gate.

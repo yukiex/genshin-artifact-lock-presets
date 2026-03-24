@@ -1,6 +1,6 @@
-# Tsukuyo Lock Assist 調査メモ
+# Moonweaver Lock Assist 調査メモ
 
-ユーザーから「`presets/tsukuyo/recommended.yml` をゲーム内推奨設定と一致させるよう修正してほしい」との要望があり、以下の一次情報を調査した。
+ユーザーから「`presets/moonweaver/recommended.yml` をゲーム内推奨設定と一致させるよう修正してほしい」との要望があり、以下の一次情報を調査した。
 
 ## 1. 公式データベース
 | 出典 | URL | 結果 |
@@ -16,10 +16,10 @@ HoYoWiki を直接呼び出す API (`https://sg-wiki-api.hoyolab.com/hoyowiki/ge
 | GameWith | https://gamewith.jp/genshin/article/show/516496 | 同上。 |
 | 神ゲー攻略 | https://kamigame.jp/genshin/page/384955936327877443.html | 同上。 |
 
-いずれも Tsukuyo（月を紡ぐ夜の歌）のビルド情報はあるが、ロックアシストの推奨数値や UI のスクリーンショットは確認できなかった。
+いずれも Moonweaver（月を紡ぐ夜の歌）のビルド情報はあるが、ロックアシストの推奨数値や UI のスクリーンショットは確認できなかった。
 
 ## 3. ゲーム内スクリーンショット
-ユーザー提供のロックアシスト画面（`docs/reference/tsukuyo-lock/` 配下の PNG 5枚）に、月を紡ぐ夜の歌の推奨設定が記録されている。
+ユーザー提供のロックアシスト画面（`docs/reference/moonweaver-lock/` 配下の PNG 5枚）に、月を紡ぐ夜の歌の推奨設定が記録されている。
 
 | スロット | 画像ファイル | 主ステータス | サブステ条件 | 必須ステータス |
 | --- | --- | --- | --- | --- |
@@ -32,7 +32,7 @@ HoYoWiki を直接呼び出す API (`https://sg-wiki-api.hoyolab.com/hoyowiki/ge
 ※いずれの部位も「次の追加ステータスのうち、いずれか2個を含む」と記載されているため、`substats_required_min: 2` とし、候補は `[ATK%, CR, CD, ER, EM]` で統一した。
 
 ## 4. 結論
-上記スクリーンショットを根拠に `presets/tsukuyo/recommended.yml` および `presets/lock-presets.yml` の Tsukuyo 推奨設定を更新済み。別途「設定1/2」はこれまでどおりユーザー独自のフィルタとして維持している。
+上記スクリーンショットを根拠に `presets/moonweaver/recommended.yml` および `presets/lock-presets.yml` の Moonweaver 推奨設定を更新済み。別途「設定1/2」はこれまでどおりユーザー独自のフィルタとして維持している。
 
 ## Custom Preset 調査メモ
 `setting1/2` を「月反応チーム内で役割が異なるサポート archetype」として再定義した。各ビルドは以下の攻略サイトに根拠がある。

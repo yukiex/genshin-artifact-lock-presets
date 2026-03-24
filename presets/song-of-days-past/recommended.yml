@@ -1,12 +1,12 @@
 version: 1
-set_id: shinro
-set_name_ja: 深廊の終曲
+set_id: song-of-days-past
+set_name_ja: 長き夜の誓い
 preset:
   key: recommended
   name: Recommended (official baseline)
-  nickname_en: Finale of the Deep
-  intent: onfield_dps
-  targets: [Skirk, Marvica, Kaeya, Aloy]
+  nickname_en: Song of Days Past
+  intent: onfield_plunge
+  targets: [Xiao, Jiaoming, Varessa]
   slots:
     flower:
       main_allowed: [HP]
@@ -24,7 +24,7 @@ preset:
       substats_required_min: 2
       substats_required_all_of: [CR, CD]
     goblet:
-      main_allowed: [CryoDMG%, ATK%]
+      main_allowed: [PyroDMG%, ElectroDMG%, AnemoDMG%, ATK%]
       substats_required_any_of: [ATK%, CR, CD]
       substats_required_min: 2
       substats_required_all_of: [CR, CD]

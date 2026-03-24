@@ -3,7 +3,7 @@
 セット: **黒曜の秘典 (Obsidian Codex)**
 
 ## 1. 推奨設定の根拠
-- [x] `docs/reference/kokuyo-hiten-lock/` に部位ごとのスクリーンショットを配置（flower / plume / sands / goblet / circlet）。
+- [x] `docs/reference/obsidian-codex-lock/` に部位ごとのスクリーンショットを配置（flower / plume / sands / goblet / circlet）。
 - [x] 下表に、各画像から読み取った主ステータス・サブステ条件・必須ステータスを転記。
 
 | スロット | 画像ファイル | 主ステータス | サブステ候補 (いずれか2個) | 必須ステータス |
@@ -14,7 +14,7 @@
 | 杯 | `スクリーンショット 2025-11-10 213021.png` | 炎元素DMG% / 水元素DMG% / 草元素DMG% / 攻撃力% | HP% / 攻撃力% / 会心率 / 会心ダメージ / 元素熟知 | 会心率 / 会心ダメージ |
 | 冠 | `スクリーンショット 2025-11-10 213026.png` | 会心率 / 会心ダメージ | HP% / 攻撃力% / 元素熟知 / 会心率 / 会心ダメージ | 会心率 / 会心ダメージ |
 
-- YAML 反映時は `presets/kokuyo-hiten/recommended.yml` と `presets/lock-presets.yml` の両方を更新する。
+- YAML 反映時は `presets/obsidian-codex/recommended.yml` と `presets/lock-presets.yml` の両方を更新する。
 - UI では全スロットで会心率 / 会心ダメージが黄色ハイライト。`substats_required_all_of: [CR, CD]` を全スロットに設定する。
 - Game8のおすすめキャラ表([game8.jp/genshin/633756](https://game8.jp/genshin/633756))では **マーヴィカ / ムアラニ / キィニチ / シロネン / チャスカ / ヴァレサ** が推奨と明記。`targets` はこの6名をすべて含むよう更新済み。
 
@@ -27,13 +27,13 @@
 
 ## 3. 作業ログ
 - リント: `yamllint presets docs`
-- スロット確認: `yq '.preset.slots | keys' presets/kokuyo-hiten/*.yml`
-- 必須サブステ確認: `yq '.preset.slots[] | select(.substats_required_min == null)' presets/kokuyo-hiten/*.yml`
+- スロット確認: `yq '.preset.slots | keys' presets/obsidian-codex/*.yml`
+- 必須サブステ確認: `yq '.preset.slots[] | select(.substats_required_min == null)' presets/obsidian-codex/*.yml`
 
 ## 4. 反映済みファイル
-- [x] `presets/kokuyo-hiten/recommended.yml`
-- [x] `presets/kokuyo-hiten/setting1.yml`
-- [x] `presets/kokuyo-hiten/setting2.yml`
+- [x] `presets/obsidian-codex/recommended.yml`
+- [x] `presets/obsidian-codex/setting1.yml`
+- [x] `presets/obsidian-codex/setting2.yml`
 - [x] `presets/lock-presets.yml`
 - [ ] `docs/ui-mapping.md`
 

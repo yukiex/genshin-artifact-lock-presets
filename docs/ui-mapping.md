@@ -53,4 +53,4 @@ substats_required_min: 2
 substats_required_all_of: [ER, EM]
 ```
 
-`substats_required_all_of` は UI で黄色表示される「必須ステータス」を 1 つも欠かさず含めるためのフィールド。Tsukuyo 推奨設定のように ER/EM を両方要求するケースで利用する。
+`substats_required_all_of` は UI で黄色表示される「必須ステータス」を 1 つも欠かさず含めるためのフィールド。Moonweaver 推奨設定のように ER/EM を両方要求するケースで利用する。

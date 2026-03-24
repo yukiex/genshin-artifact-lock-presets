@@ -1,9 +1,9 @@
-# Naganoya Lock Assist 調査メモ
+# Song of Days Past Lock Assist 調査メモ
 
 セット: **長き夜の誓い (Song of Days Past)**
 
 ## 1. 推奨設定の根拠
-- [ ] `docs/reference/naganoya-lock/` に部位ごとのスクリーンショットを配置（flower / plume / sands / goblet / circlet）。
+- [ ] `docs/reference/song-of-days-past-lock/` に部位ごとのスクリーンショットを配置（flower / plume / sands / goblet / circlet）。
 - [ ] 下表に、各画像から読み取った主ステータス・サブステ条件・必須ステータスを転記。
 
 | スロット | 画像ファイル | 主ステータス | サブステ候補 (いずれか2個) | 必須ステータス |
@@ -14,7 +14,7 @@
 | 杯 | `スクリーンショット 2025-11-09 222136.png` | 炎元素ダメージ / 雷元素ダメージ / 風元素ダメージ / 攻撃力% | 攻撃力% / 会心率 / 会心ダメージ | 会心率, 会心ダメージ |
 | 冠 | `スクリーンショット 2025-11-09 222141.png` | 会心率 / 会心ダメージ | 攻撃力% / 会心率 / 会心ダメージ | 会心率, 会心ダメージ |
 
-- YAML 反映時は `presets/naganoya/recommended.yml` と `presets/lock-presets.yml` の両方を更新する。
+- YAML 反映時は `presets/song-of-days-past/recommended.yml` と `presets/lock-presets.yml` の両方を更新する。
 
 ## 2. Custom Preset 調査
 - `setting1` / `setting2` は厳しさではなく**異なるキャラクタータイプ**を表す。攻略サイト・ビルドガイドなど、根拠となる URL とポイントを以下に整理する。
@@ -26,5 +26,5 @@
 
 ## 3. 作業ログ
 - リント: `yamllint presets docs`
-- スロット確認: `yq '.preset.slots | keys' presets/naganoya/*.yml`
-- 必須サブステ確認: `yq '.preset.slots[] | select(.substats_required_min == null)' presets/naganoya/*.yml`
+- スロット確認: `yq '.preset.slots | keys' presets/song-of-days-past/*.yml`
+- 必須サブステ確認: `yq '.preset.slots[] | select(.substats_required_min == null)' presets/song-of-days-past/*.yml`

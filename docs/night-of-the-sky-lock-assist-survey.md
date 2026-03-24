@@ -1,6 +1,6 @@
-# Tenkyu Lock Assist 調査メモ
+# Night of the Sky Lock Assist 調査メモ
 
-ゲーム内ロックアシスト推奨設定（スクリーンショットは `docs/reference/tenkyu-lock/`）を元に、`presets/tenkyu/recommended.yml` と `presets/lock-presets.yml` を更新した内容を記録する。
+ゲーム内ロックアシスト推奨設定（スクリーンショットは `docs/reference/night-of-the-sky-lock/`）を元に、`presets/night-of-the-sky/recommended.yml` と `presets/lock-presets.yml` を更新した内容を記録する。
 
 | スロット | 画像ファイル | 主ステータス | サブステ候補 | 必須ステータス |
 | --- | --- | --- | --- | --- |
@@ -14,7 +14,7 @@
 - そのため YAML では `substats_required_any_of` に列挙（[CR, CD, ER, EM]）し、`substats_required_min: 2`、さらに `substats_required_all_of: [CR, CD]` をセットしている。
 
 ## 反映済みファイル
-- `presets/tenkyu/recommended.yml`
+- `presets/night-of-the-sky/recommended.yml`
 - `presets/lock-presets.yml`
 
 ## Custom Preset 調査メモ

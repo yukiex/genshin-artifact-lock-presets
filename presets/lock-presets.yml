@@ -6,7 +6,7 @@ notes:
   - Abbrev: CR=Crit Rate, CD=Crit DMG, ER=Energy Recharge, EM=Elemental Mastery.
 
 sets:
-  - id: tsukuyo
+  - id: moonweaver
     name_ja: 月を紡ぐ夜の歌
     nickname_en: "Moonweaver (support-oriented: ER/EM; off-field works)"
     presets:
@@ -104,7 +104,7 @@ sets:
             substats_required_min: 3
             substats_required_all_of: [EM]
 
-  - id: tenkyu
+  - id: night-of-the-sky
     name_ja: 天穹の顕現せし夜
     nickname_en: >
       Night of the Sky (on-field DPS: Crit-focused; +CR while on-field)
@@ -191,7 +191,7 @@ sets:
             main_allowed: [CR, CD]
             substats_required_any_of: [CR, CD, DEF%, EM]
             substats_required_min: 3
-  - id: shinro
+  - id: finale-of-the-deep
     name_ja: 深廊の終曲
     nickname_en: Finale of the Deep (Cryo DMG; energy drain gimmick)
     presets:
@@ -280,7 +280,7 @@ sets:
             substats_required_any_of: [ATK%, ER, CR, CD]
             substats_required_min: 2
 
-  - id: naganoya
+  - id: song-of-days-past
     name_ja: 長き夜の誓い
     nickname_en: Song of Days Past (plunge stacks)
     presets:
@@ -401,7 +401,7 @@ sets:
             substats_required_any_of: [CR, CD, EM, ATK%]
             substats_required_min: 3
 
-  - id: kokuyo-hiten
+  - id: obsidian-codex
     name_ja: 黒曜の秘典
     nickname_en: "Obsidian Codex (nightsoul crit baseline)"
     presets:
@@ -490,7 +490,7 @@ sets:
             substats_required_min: 3
             substats_required_all_of: [ER, HP%, DEF%]
 
-  - id: haijin-eiyu-emaki
+  - id: ashen-hero-scroll
     name_ja: 灰燼の都に立つ英雄の絵巻
     nickname_en: "Ashen Hero Scroll (ER baseline support)"
     presets:
