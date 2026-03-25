@@ -7,6 +7,7 @@ preset:
   nickname_en: Song of Days Past
   intent: onfield_plunge
   targets: [Xiao, Jiaoming, Varessa]
+  targets_ja: [魈, 嘉明, ヴァレサ]
   slots:
     flower:
       main_allowed: [HP]

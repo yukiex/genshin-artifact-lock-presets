@@ -7,6 +7,7 @@ preset:
   nickname_en: Gilded Dreams
   intent: reaction_trigger_full_em
   targets: [KukiShinobu, Thoma]
+  targets_ja: [久岐忍, トーマ]
   slots:
     flower:
       main_allowed: [HP]

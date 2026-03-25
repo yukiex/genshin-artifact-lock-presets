@@ -3,18 +3,18 @@
 セット: **黒曜の秘典 (Obsidian Codex)**
 
 ## 1. 推奨設定の根拠
-- [x] `docs/reference/obsidian-codex-lock/` に部位ごとのスクリーンショットを配置（flower / plume / sands / goblet / circlet）。
+- [x] `docs/references/obsidian-codex/` に部位ごとのスクリーンショットを配置（flower / plume / sands / goblet / circlet）。
 - [x] 下表に、各画像から読み取った主ステータス・サブステ条件・必須ステータスを転記。
 
 | スロット | 画像ファイル | 主ステータス | サブステ候補 (いずれか2個) | 必須ステータス |
 | --- | --- | --- | --- | --- |
-| 花 | `スクリーンショット 2025-11-10 213009.png` | HP | HP% / 攻撃力% / 元素熟知 / 会心率 / 会心ダメージ | 会心率 / 会心ダメージ |
-| 羽 | `スクリーンショット 2025-11-10 213013.png` | 攻撃力 | HP% / 攻撃力% / 元素熟知 / 会心率 / 会心ダメージ | 会心率 / 会心ダメージ |
-| 時計 | `スクリーンショット 2025-11-10 213017.png` | HP% / 元素熟知 / 攻撃力% | HP% / 攻撃力% / 会心率 / 会心ダメージ / 元素熟知 | 会心率 / 会心ダメージ |
-| 杯 | `スクリーンショット 2025-11-10 213021.png` | 炎元素DMG% / 水元素DMG% / 草元素DMG% / 攻撃力% | HP% / 攻撃力% / 会心率 / 会心ダメージ / 元素熟知 | 会心率 / 会心ダメージ |
-| 冠 | `スクリーンショット 2025-11-10 213026.png` | 会心率 / 会心ダメージ | HP% / 攻撃力% / 元素熟知 / 会心率 / 会心ダメージ | 会心率 / 会心ダメージ |
+| 花 | `flower.png` | HP | HP% / 攻撃力% / 元素熟知 / 会心率 / 会心ダメージ | 会心率 / 会心ダメージ |
+| 羽 | `plume.png` | 攻撃力 | HP% / 攻撃力% / 元素熟知 / 会心率 / 会心ダメージ | 会心率 / 会心ダメージ |
+| 時計 | `sands.png` | HP% / 元素熟知 / 攻撃力% | HP% / 攻撃力% / 会心率 / 会心ダメージ / 元素熟知 | 会心率 / 会心ダメージ |
+| 杯 | `goblet.png` | 炎元素DMG% / 水元素DMG% / 草元素DMG% / 攻撃力% | HP% / 攻撃力% / 会心率 / 会心ダメージ / 元素熟知 | 会心率 / 会心ダメージ |
+| 冠 | `circlet.png` | 会心率 / 会心ダメージ | HP% / 攻撃力% / 元素熟知 / 会心率 / 会心ダメージ | 会心率 / 会心ダメージ |
 
-- YAML 反映時は `presets/obsidian-codex/recommended.yml` と `presets/lock-presets.yml` の両方を更新する。
+- YAML 反映時は `presets/obsidian-codex/recommended.yml`を更新する。
 - UI では全スロットで会心率 / 会心ダメージが黄色ハイライト。`substats_required_all_of: [CR, CD]` を全スロットに設定する。
 - Game8のおすすめキャラ表([game8.jp/genshin/633756](https://game8.jp/genshin/633756))では **マーヴィカ / ムアラニ / キィニチ / シロネン / チャスカ / ヴァレサ** が推奨と明記。`targets` はこの6名をすべて含むよう更新済み。
 
@@ -34,7 +34,6 @@
 - [x] `presets/obsidian-codex/recommended.yml`
 - [x] `presets/obsidian-codex/setting1.yml`
 - [x] `presets/obsidian-codex/setting2.yml`
-- [x] `presets/lock-presets.yml`
 - [ ] `docs/ui-mapping.md`
 
 ## 5. 備考

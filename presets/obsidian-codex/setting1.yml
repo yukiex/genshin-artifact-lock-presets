@@ -7,6 +7,7 @@ preset:
   nickname_en: Obsidian Codex
   intent: onfield_dps_carry
   targets: [Marvica, Mualani, Kinich, Chasca, Varessa]
+  targets_ja: [マーヴィカ, ムアラニ, キィニチ, チャスカ, ヴァレサ]
   slots:
     flower:
       main_allowed: [HP]

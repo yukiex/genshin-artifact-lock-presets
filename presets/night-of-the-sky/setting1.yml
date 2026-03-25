@@ -7,6 +7,7 @@ preset:
   nickname_en: Night of the Sky
   intent: onfield_dps_quickbloom
   targets: [Cyno, Clorinde, YaeMiko, Keqing]
+  targets_ja: [セノ, クロリンデ, 八重神子, 刻晴]
   slots:
     flower:
       main_allowed: [HP]

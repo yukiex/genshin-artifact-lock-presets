@@ -7,6 +7,7 @@ preset:
   nickname_en: Night of the Sky
   intent: onfield_dps_lunar_crystallize
   targets: [Shihaku]
+  targets_ja: [しはく]
   slots:
     flower:
       main_allowed: [HP]

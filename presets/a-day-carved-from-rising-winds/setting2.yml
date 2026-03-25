@@ -7,6 +7,7 @@ preset:
   nickname_en: A Day Carved From Rising Winds
   intent: offfield_dps_atk_crit
   targets: [Fischl, Venti]
+  targets_ja: [フィッシュル, ウェンティ]
   slots:
     flower:
       main_allowed: [HP]

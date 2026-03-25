@@ -7,6 +7,7 @@ preset:
   nickname_en: Golden Troupe
   intent: offfield_skill_dps
   targets: [Fischl, YaeMiko]
+  targets_ja: [フィッシュル, 八重神子]
   slots:
     flower:
       main_allowed: [HP]

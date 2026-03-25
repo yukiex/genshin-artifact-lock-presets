@@ -7,6 +7,7 @@ preset:
   nickname_en: Moonweaver
   intent: support_battery
   targets: [RaidenShogun, Inefa, Aino, Xingqiu, Yelan]
+  targets_ja: [雷電将軍, イネファ, アイノ, 行秋, 夜蘭]
   slots:
     flower:
       main_allowed: [HP]

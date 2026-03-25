@@ -7,6 +7,7 @@ preset:
   nickname_en: Aubade of Morningstar and Moon
   intent: offfield_lunar_sub_dps
   targets: [Ineffa]
+  targets_ja: [イネファ]
   slots:
     flower:
       main_allowed: [HP]

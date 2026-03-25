@@ -3,19 +3,19 @@
 セット: **灰燼の都に立つ英雄の絵巻 (Scroll of the Hero Standing in the Ashen City)**
 
 ## 1. 推奨設定の根拠
-- [x] `docs/reference/ashen-hero-scroll-lock/` に部位ごとのスクリーンショットを配置（flower / plume / sands / goblet / circlet）。
+- [x] `docs/references/ashen-hero-scroll/` に部位ごとのスクリーンショットを配置（flower / plume / sands / goblet / circlet）。
 - [x] 下表に、各画像から読み取った主ステータス・サブステ条件・必須ステータスを転記。
 
 | スロット | 画像ファイル | 主ステータス | サブステ候補 (いずれか2個) | 必須ステータス |
 | --- | --- | --- | --- | --- |
-| 花 | `スクリーンショット 2025-11-10 213033.png` | HP | 攻撃力% / 防御力% / 会心率 / 会心ダメージ / 元素熟知 / 元素チャージ効率 | 会心率 / 元素チャージ効率 |
-| 羽 | `スクリーンショット 2025-11-10 213037.png` | 攻撃力 | 攻撃力% / 防御力% / 会心率 / 会心ダメージ / 元素熟知 / 元素チャージ効率 | 会心率 / 元素チャージ効率 |
-| 時計 | `スクリーンショット 2025-11-10 213041.png` | 防御力% / 元素熟知 / 攻撃力% | 攻撃力% / 防御力% / 元素チャージ効率 / 元素熟知 | 元素チャージ効率 |
-| 杯 | `スクリーンショット 2025-11-10 213045.png` | 攻撃力% / 炎元素DMG% / 防御力% / 岩元素DMG% / 元素熟知 | 攻撃力% / 防御力% / 元素チャージ効率 / 元素熟知 | 元素チャージ効率 |
-| 冠 | `スクリーンショット 2025-11-10 213049.png` | 攻撃力% / 防御力% / 与える治療効果% / 元素熟知 | 攻撃力% / 防御力% / 元素チャージ効率 / 元素熟知 | 元素チャージ効率 |
+| 花 | `flower.png` | HP | 攻撃力% / 防御力% / 会心率 / 会心ダメージ / 元素熟知 / 元素チャージ効率 | 会心率 / 元素チャージ効率 |
+| 羽 | `plume.png` | 攻撃力 | 攻撃力% / 防御力% / 会心率 / 会心ダメージ / 元素熟知 / 元素チャージ効率 | 会心率 / 元素チャージ効率 |
+| 時計 | `sands.png` | 防御力% / 元素熟知 / 攻撃力% | 攻撃力% / 防御力% / 元素チャージ効率 / 元素熟知 | 元素チャージ効率 |
+| 杯 | `goblet.png` | 攻撃力% / 炎元素DMG% / 防御力% / 岩元素DMG% / 元素熟知 | 攻撃力% / 防御力% / 元素チャージ効率 / 元素熟知 | 元素チャージ効率 |
+| 冠 | `circlet.png` | 攻撃力% / 防御力% / 与える治療効果% / 元素熟知 | 攻撃力% / 防御力% / 元素チャージ効率 / 元素熟知 | 元素チャージ効率 |
 
 - UIでは花・羽のみ会心率＋元素チャージ効率が黄色ハイライト、その他3部位は元素チャージ効率のみ。`substats_required_all_of` は花/羽で `[ER, CR]`、他スロットは `[ER]` とし、`substats_required_min: 2` を徹底する。
-- YAML 反映時は `presets/ashen-hero-scroll/recommended.yml` と `presets/lock-presets.yml` の該当セクションで同期。
+- YAML 反映時は `presets/ashen-hero-scroll/recommended.yml` の該当セクションで同期。
 
 ## 2. Custom Preset 調査
 
@@ -35,7 +35,6 @@
 - [x] `presets/ashen-hero-scroll/recommended.yml`
 - [x] `presets/ashen-hero-scroll/setting1.yml`
 - [x] `presets/ashen-hero-scroll/setting2.yml`
-- [x] `presets/lock-presets.yml`
 - [ ] `docs/ui-mapping.md`
 
 ## 5. 備考

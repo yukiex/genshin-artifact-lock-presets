@@ -8,6 +8,7 @@ preset:
   intent: onfield_dps
   targets: [Ganyu, Tighnari, Yanfei, Klee, Lyney, Neuvillette, Sethos,
             Chasca, Amber, Barbara]
+  targets_ja: [甘雨, ティナリ, 煙緋, クレー, リネ, ヌヴィレット, セトス, チャスカ, アンバー, バーバラ]
   slots:
     flower:
       main_allowed: [HP]

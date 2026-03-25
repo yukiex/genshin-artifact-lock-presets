@@ -1,72 +1,74 @@
 # Repository Guidelines
-This repo curates YAML presets for Genshin Impact's Lock Assist; keep every contribution traceable and easy to verify against in-game behavior.
+
+This repository curates YAML presets for Genshin Impact's Lock Assist. Keep every change traceable, reviewable, and easy to reconcile with in-game behavior.
 
 ## Project Structure & Module Organization
-- `presets/lock-presets.yml` is the canonical catalog consumed by downstream tooling; keep it synchronized with any per-set edits.
-- `presets/<set>/` folders (currently `moonweaver/`, `night-of-the-sky/`, `finale-of-the-deep/`, `song-of-days-past/`, `obsidian-codex/`, `ashen-hero-scroll/`, `wanderers-troupe/`, `tenacity-of-the-millelith/`) hold human-friendly files named `recommended.yml`, `setting1.yml`, and `setting2.yml`—copy this pattern when adding sets. 新規セットの草案も必ずこの個別ディレクトリ配下に置き、単一の結合ファイルだけで済ませないこと。
-- `docs/ui-mapping.md` defines every abbreviation and mapping between UI toggles and YAML keys, and `README.md` hosts the user-facing explanation; update them whenever wording, abbreviations, or slot semantics change.
+- `presets/<set-id>/` is the source of truth. Each set directory may contain `recommended.yml`, `setting1.yml`, and `setting2.yml`.
+- `docs/surveys/<set-id>.md` stores the research note, evidence trail, and authored rationale for one set.
+- `docs/references/<set-id>/` stores reference screenshots or placeholder files. Use the canonical screenshot names `flower.png`, `plume.png`, `sands.png`, `goblet.png`, and `circlet.png` when images exist.
+- `docs/ui-mapping.md` defines the schema abbreviations and UI mapping rules.
+- `docs/target-sets.md` tracks backlog or partially authored sets.
 
 ## Build, Test, and Development Commands
-- `yamllint presets docs` – structural lint; catches indentation drift and stray tabs before commit.
-- `yq eval '.preset.slots | keys' presets/moonweaver/recommended.yml` – confirms each file covers the five expected slots; swap the path for the file you touched.
-- `yq eval '.preset.slots[] | select(.substats_required_min == null)' presets -o=json` – should return nothing; use it to guarantee every slot declares a minimum.
+- `yamllint presets docs` — structural lint.
+- `yq '.preset.slots | keys' presets/moonweaver/recommended.yml` — confirm the expected five slots.
+- `yq '.preset.slots[] | select(.substats_required_min == null)' presets/moonweaver/*.yml` — should print nothing.
+- `rg -n '^\s*targets(_ja)?:' presets/<set-id>` — quick check that `targets` and `targets_ja` are both present when needed.
 
 ## Coding Style & Naming Conventions
-Indent with two spaces, keep keys ordered as `version`, `set_*`, then `preset`, and wrap long inline lists so continued lines align under the opening bracket. Directories and files stay lowercase with hyphen-separated folders; slot keys (`flower` … `circlet`) and abbreviations must match the table in `docs/ui-mapping.md`. Use descriptive inline comments sparingly to flag intent (e.g., why a goblet excludes HP%).
+- Use two-space indentation.
+- Keep top-level key order as `version`, `set_*`, then `preset`.
+- Directory and file names must be lowercase ASCII with hyphen-separated words.
+- `targets` is the English identifier list. `targets_ja` is the Japanese display-name list in the same order.
+- Add comments sparingly and only when a rule would otherwise be hard to infer from the YAML itself.
 
 ## Testing Guidelines
-Lint plus semantic review is the minimum bar. After editing an individual preset, mirror the same numbers in `presets/lock-presets.yml`, document at least one manual scenario in the PR (e.g., “Moonweaver strict goblet keeps only ElementalDMG%”), and attach UI screenshots whenever the change alters visible filters. Treat new abbreviations as schema changes—add them to `docs/ui-mapping.md` and verify they render correctly.
+- Lint plus semantic review is the minimum bar.
+- After editing a preset, validate the five-slot structure and confirm `substats_required_min` is present everywhere.
+- If the change affects `recommended`, update the matching survey note and keep the evidence trail intact.
+- If the change affects `targets`, update both `targets` and `targets_ja` together.
 
 ## Commit & Pull Request Guidelines
-Follow an imperative Conventional Commit style with the set as the scope (`feat(moonweaver): tighten ER floor`). Keep commits focused, reference related issues, and list which presets were touched. PRs should describe intent, note the lint/YQ commands you ran, and call out README/docs updates. Request a review before merging to ensure both lenient and strict presets stay consistent.
+- Use imperative Conventional Commit messages.
+- Keep commits focused and list which sets changed.
+- Substantial changes should go through a PR and GitHub Copilot review.
+- PRs should state the change goal, what reviewers should focus on, known tradeoffs, and any intentionally preserved behavior.
 
 ## Security & Configuration Tips
-Strip player UIDs or HoYo account data from screenshots, and avoid committing personal automation scripts or dumps. Keep secrets in local env vars rather than YAML files.
+- Remove player UIDs or account-identifying data from screenshots before committing them.
+- Do not commit private tooling or personal automation artifacts.
 
-## 新規セット追加ワークフロー (Adding New Sets)
+## 新規セット追加ワークフロー
 
-新しいセットを追加する際は `docs/lock-assist-survey-template.md` をコピーして `docs/[set-id]-lock-assist-survey.md` を作成し、以下の手順で進める。
+新しいセットを追加する際は `docs/surveys/template.md` をコピーして `docs/surveys/<set-id>.md` を作成し、以下の手順で進める。
 
-### 1. 準備 (AI)
-- 攻略サイト（海外）などを参考にして、セットの内部ID（フォルダ名・`lock-presets.yml` で使う `id`）を決定
-- `docs/reference/[set-id]-lock/` フォルダを作成
-- 調査メモファイル `docs/[set-id]-lock-assist-survey.md` をテンプレートから作成
+### 1. 準備
+- 攻略サイトや公式表記をもとに `set_id` を決める。
+- `docs/references/<set-id>/` を作成する。
+- 調査メモ `docs/surveys/<set-id>.md` をテンプレートから作成する。
 
-### 2. Custom Settings の調査と作成 (AI)
-- `setting1` / `setting2` は「厳しさ」ではなく**異なるキャラクタータイプ**を表す
-- 攻略サイト（Game8/GameWith/神ゲー攻略/Gamerch）でセット解説を調査：
-  - おすすめキャラクター一覧
-  - ビルドタイプ別の推奨ステータス（例: オンフィールドDPS、サポーター、元素反応ドライバー）
-- 調査結果を元に、異なるアーキタイプ向けの2つの設定を作成し、調査メモに根拠URLを明記
-- `setting1` / `setting2` はスクリーンショット待ちをせず先行作成してよい
-- **運用前提**: 推奨（Recommended）を常に有効化し、必要に応じて setting1/2 を追加でオン
+### 2. Custom Settings の調査と作成
+- `setting1` / `setting2` は厳しさ違いではなく異なるアーキタイプにする。
+- 攻略サイト・理論系ガイド・BWiki などを見て、対象キャラと主ステ / サブステ方針を整理する。
+- `targets` と `targets_ja` を同じ順序で書く。
+- `setting1` / `setting2` はスクリーンショット待ちをせず先行作成してよい。
 
-### 3. 推奨設定の証跡収集 (人間)
-- `recommended` の証跡優先順位は以下とする
-  1. 5部位の静止スクリーンショット
-  2. 5部位が確認できる画面録画
-  3. 人手で転記した部位別設定メモ
-- 1 が無い場合でも `presets/[set-id]/` の作成は許可する
-- 2 または 3 を使って `recommended.yml` を作る場合は、調査メモに `Evidence level: provisional` と明記する
-- 可能なら静止スクリーンショットを `docs/reference/[set-id]-lock/` に保存する
+### 3. 推奨設定の証跡収集
+- `recommended` の証跡優先順位は、静止スクリーンショット → 画面録画 → 人手メモ。
+- 静止画がある場合は `docs/references/<set-id>/flower.png` などの canonical name にそろえる。
+- 静止画がなくても `recommended.yml` を作ることはできるが、その場合は survey note に `Evidence level: provisional` を明記する。
 
-### 4. 推奨設定の調査と転記 (AI)
-1. 証跡は優先順位 1→2→3 で採用し、使用した証跡種別を調査メモに記録する
-2. スクリーンショット・録画・人手メモから主ステータス・サブステ候補・必須ステータスを読み取り、調査メモの表に記入
-3. 静止スクリーンショット以外を使う場合は `Evidence level: provisional` を調査メモに明記する
-4. `recommended.yml` に読み取った値を反映する
-   - 主ステータス → `main_allowed`
-   - 必須ステータス（黄色ハイライト） → `substats_required_all_of`
-   - サブステ候補 → `substats_required_any_of` と `substats_required_min`
-5. UI の文言（「いずれかN個を含む」「必須ステータスをすべて含む」）を正確に記録する
-6. `presets/lock-presets.yml` の対応セクションも同じ値に更新
+### 4. 推奨設定の転記
+- 証跡から主ステータス、候補サブステ、必須サブステを読み取る。
+- UI 文言を YAML に正確に対応させる。
+- `recommended.yml` は転記に徹し、改善案は `setting1` / `setting2` に分離する。
 
-### 5. ドキュメント更新 (AI)
-- 新しい略語やフィールドを導入した場合は `docs/ui-mapping.md` を更新
-- `README.md` のスキーマ説明も必要に応じて追加
+### 5. ドキュメント更新
+- 新しい略語が必要なら `docs/ui-mapping.md` を更新する。
+- schema や workflow の説明が変わるなら `README.md` も更新する。
 
-### 6. 検証 (AI)
-- `yamllint presets docs` でリント
-- `yq '.preset.slots | keys' presets/[set-id]/*.yml` で5スロット揃っているか確認
-- `yq '.preset.slots[] | select(.substats_required_min == null)' presets/[set-id]/*.yml` が空であることを確認
-- 調査メモの「反映済みファイル」チェックリストを更新
+### 6. 検証
+- `yamllint presets docs`
+- `yq '.preset.slots | keys' presets/<set-id>/*.yml`
+- `yq '.preset.slots[] | select(.substats_required_min == null)' presets/<set-id>/*.yml`
+- `rg -n '^\s*targets(_ja)?:' presets/<set-id>`

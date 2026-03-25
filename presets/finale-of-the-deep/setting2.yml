@@ -7,6 +7,7 @@ preset:
   nickname_en: Finale of the Deep
   intent: onfield_cryo_hybrid
   targets: [KamisatoAyaka, Ganyu, Rosaria, Shenhe]
+  targets_ja: [神里綾華, 甘雨, ロサリア, 申鶴]
   slots:
     flower:
       main_allowed: [HP]

@@ -9,6 +9,8 @@ preset:
   targets: [Xingqiu, Yelan, Xiangling, Fischl, Beidou, YaeMiko,
             Kokomi, Baizhu, Bennett, Diona, Layla, Kirara,
             Barbara, Thoma, Qiqi, KukiShinobu, Collei, Kaveh]
+  targets_ja: [行秋, 夜蘭, 香菱, フィッシュル, 北斗, 八重神子, 珊瑚宮心海, 白朮, ベネット, ディオナ,
+               レイラ, 綺良々, バーバラ, トーマ, 七七, 久岐忍, コレイ, カーヴェ]
   slots:
     flower:
       main_allowed: [HP]

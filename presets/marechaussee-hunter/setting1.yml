@@ -7,6 +7,7 @@ preset:
   nickname_en: Marechaussee Hunter
   intent: onfield_hp_carry
   targets: [Neuvillette]
+  targets_ja: [ヌヴィレット]
   slots:
     flower:
       main_allowed: [HP]
