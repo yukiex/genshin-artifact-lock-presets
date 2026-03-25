@@ -65,16 +65,12 @@
 - 未着手: `recommended.yml` 転記
 - 作成済み: `presets/tenacity-of-the-millelith/setting1.yml`
 - 作成済み: `presets/tenacity-of-the-millelith/setting2.yml`
-- 完了: `presets/lock-presets.yml` への setting1 / setting2 追記
+- 未着手: `presets/lock-presets.yml` への同期
 
 ## 5. 反映済みファイル
 - [ ] `presets/tenacity-of-the-millelith/recommended.yml`
 - [x] `presets/tenacity-of-the-millelith/setting1.yml`
 - [x] `presets/tenacity-of-the-millelith/setting2.yml`
-- [x] `presets/lock-presets.yml` (setting1 / setting2 のみ; recommended は証跡取得後に追加)
+- [ ] `presets/lock-presets.yml`
 - [ ] `README.md`
 - [ ] `docs/ui-mapping.md`
-
-## 6. ブロッカー
-- `recommended` はゲーム内「ロックアシスト」推奨設定の静止スクリーンショット・録画・人手メモのいずれも未取得なので未確定。
-- そのため、`recommended.yml` と `presets/lock-presets.yml` への追加はまだ実施しない。

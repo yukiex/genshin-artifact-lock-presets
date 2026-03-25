@@ -3,7 +3,7 @@ This repo curates YAML presets for Genshin Impact's Lock Assist; keep every cont
 
 ## Project Structure & Module Organization
 - `presets/lock-presets.yml` is the canonical catalog consumed by downstream tooling; keep it synchronized with any per-set edits.
-- `presets/<set>/` folders (currently `moonweaver/`, `night-of-the-sky/`, `finale-of-the-deep/`, `song-of-days-past/`, `obsidian-codex/`, `ashen-hero-scroll/`, `wanderers-troupe/`, `tenacity-of-the-millelith/`) hold human-friendly files named `recommended.yml`, `setting1.yml`, and `setting2.yml`—copy this pattern when adding sets. `recommended.yml` may be absent while in-game evidence (screenshots / recording / manual notes) is still pending; `setting1.yml` and `setting2.yml` may be committed ahead of it as long as `lock-presets.yml` is kept in sync.
+- `presets/<set>/` folders (currently `moonweaver/`, `night-of-the-sky/`, `finale-of-the-deep/`, `song-of-days-past/`, `obsidian-codex/`, `ashen-hero-scroll/`, `wanderers-troupe/`, `tenacity-of-the-millelith/`) hold human-friendly files named `recommended.yml`, `setting1.yml`, and `setting2.yml`—copy this pattern when adding sets. 新規セットの草案も必ずこの個別ディレクトリ配下に置き、単一の結合ファイルだけで済ませないこと。
 - `docs/ui-mapping.md` defines every abbreviation and mapping between UI toggles and YAML keys, and `README.md` hosts the user-facing explanation; update them whenever wording, abbreviations, or slot semantics change.
 
 ## Build, Test, and Development Commands
@@ -39,7 +39,6 @@ Strip player UIDs or HoYo account data from screenshots, and avoid committing pe
   - ビルドタイプ別の推奨ステータス（例: オンフィールドDPS、サポーター、元素反応ドライバー）
 - 調査結果を元に、異なるアーキタイプ向けの2つの設定を作成し、調査メモに根拠URLを明記
 - `setting1` / `setting2` はスクリーンショット待ちをせず先行作成してよい
-- **作成後は必ず `presets/lock-presets.yml` の該当セクションに `setting1` / `setting2` を追記する**（`recommended` は後で追加）
 - **運用前提**: 推奨（Recommended）を常に有効化し、必要に応じて setting1/2 を追加でオン
 
 ### 3. 推奨設定の証跡収集 (人間)
