@@ -65,13 +65,13 @@
 - 未着手: `recommended.yml` 転記
 - 作成済み: `presets/tenacity-of-the-millelith/setting1.yml`
 - 作成済み: `presets/tenacity-of-the-millelith/setting2.yml`
-- 未着手: `presets/lock-presets.yml` への同期
+- 完了: `presets/lock-presets.yml` への setting1 / setting2 追記
 
 ## 5. 反映済みファイル
 - [ ] `presets/tenacity-of-the-millelith/recommended.yml`
 - [x] `presets/tenacity-of-the-millelith/setting1.yml`
 - [x] `presets/tenacity-of-the-millelith/setting2.yml`
-- [ ] `presets/lock-presets.yml`
+- [x] `presets/lock-presets.yml` (setting1 / setting2 のみ; recommended は証跡取得後に追加)
 - [ ] `README.md`
 - [ ] `docs/ui-mapping.md`
 
