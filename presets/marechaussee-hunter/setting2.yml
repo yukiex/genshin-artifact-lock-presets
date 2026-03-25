@@ -7,6 +7,7 @@ preset:
   nickname_en: Marechaussee Hunter
   intent: onfield_atk_carry
   targets: [Lyney, Wriothesley]
+  targets_ja: [リネ, リオセスリ]
   slots:
     flower:
       main_allowed: [HP]

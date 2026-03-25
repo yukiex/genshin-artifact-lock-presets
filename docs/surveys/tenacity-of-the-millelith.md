@@ -8,7 +8,7 @@
   - 既存リポジトリは `wanderers-troupe` のように旧来セットで公式英語名ベースの ID も使っている。
   - `千岩牢固` は `Tenacity of the Millelith` が英語圏で十分定着しており、JP ローマ字化より誤読が少ない。
   - `millelith` 単独よりも公式セット名全体のほうが検索性と可読性が高い。
-- Inference: この ID はまだ未採用。実装時に `README.md` と `presets/lock-presets.yml` の命名トーンを再確認したうえで最終決定する。
+- 2026-03-26 時点で `tenacity-of-the-millelith` を採用済み。
 
 ## 1. ソースログ
 
@@ -24,7 +24,7 @@
 ## 2. 推奨設定の根拠
 - Evidence source: `(未取得)`
 - Evidence level: `(未確定)`
-- [ ] `docs/reference/tenacity-of-the-millelith-lock/` に部位ごとのスクリーンショットを配置（flower / plume / sands / goblet / circlet）。
+- [ ] `docs/references/tenacity-of-the-millelith/` に部位ごとのスクリーンショットを配置（flower / plume / sands / goblet / circlet）。
 - [ ] 下表に、採用した証跡から読み取った主ステータス・サブステ条件・必須ステータスを転記。
 - 現時点では証跡未取得のため、`recommended` は未確定。
 
@@ -65,12 +65,10 @@
 - 未着手: `recommended.yml` 転記
 - 作成済み: `presets/tenacity-of-the-millelith/setting1.yml`
 - 作成済み: `presets/tenacity-of-the-millelith/setting2.yml`
-- 未着手: `presets/lock-presets.yml` への同期
 
 ## 5. 反映済みファイル
 - [ ] `presets/tenacity-of-the-millelith/recommended.yml`
 - [x] `presets/tenacity-of-the-millelith/setting1.yml`
 - [x] `presets/tenacity-of-the-millelith/setting2.yml`
-- [ ] `presets/lock-presets.yml`
 - [ ] `README.md`
 - [ ] `docs/ui-mapping.md`

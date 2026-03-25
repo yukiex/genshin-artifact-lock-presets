@@ -7,6 +7,7 @@ preset:
   nickname_en: Gilded Dreams
   intent: onfield_reaction_carry
   targets: [Alhaitham, Cyno, YaeMiko, Tighnari]
+  targets_ja: [アルハイゼン, セノ, 八重神子, ティナリ]
   slots:
     flower:
       main_allowed: [HP]

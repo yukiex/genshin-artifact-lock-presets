@@ -7,6 +7,7 @@ preset:
   nickname_en: Obsidian Codex
   intent: support_offfield_tanky
   targets: [Xilonen]
+  targets_ja: [シロネン]
   slots:
     flower:
       main_allowed: [HP]

@@ -7,6 +7,7 @@ preset:
   nickname_en: Finale of the Deep
   intent: onfield_dps
   targets: [Skirk, Marvica, Kaeya, Aloy]
+  targets_ja: [スカーク, マーヴィカ, ガイア, アーロイ]
   slots:
     flower:
       main_allowed: [HP]

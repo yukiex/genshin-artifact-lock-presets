@@ -1,21 +1,20 @@
 # Night of the Sky Lock Assist 調査メモ
 
-ゲーム内ロックアシスト推奨設定（スクリーンショットは `docs/reference/night-of-the-sky-lock/`）を元に、`presets/night-of-the-sky/recommended.yml` と `presets/lock-presets.yml` を更新した内容を記録する。
+ゲーム内ロックアシスト推奨設定（スクリーンショットは `docs/references/night-of-the-sky/`）を元に、`presets/night-of-the-sky/recommended.yml` を更新した内容を記録する。
 
 | スロット | 画像ファイル | 主ステータス | サブステ候補 | 必須ステータス |
 | --- | --- | --- | --- | --- |
-| 花 | `スクリーンショット 2025-11-09 203948.png` | HP 固定 | 元素熟知 / 攻撃力% / 会心率 / 会心ダメージ | 会心率, 会心ダメージ |
-| 羽 | `スクリーンショット 2025-11-09 203953.png` | 攻撃力固定 | 同上 | 会心率, 会心ダメージ |
-| 時計 | `スクリーンショット 2025-11-09 203957.png` | 元素熟知 / 攻撃力% | 会心率 / 元素熟知 / 会心ダメージ / 攻撃力% | 会心率, 会心ダメージ |
-| 杯 | `スクリーンショット 2025-11-09 204002.png` | 元素熟知 / 攻撃力% | 同上 | 会心率, 会心ダメージ |
-| 冠 | `スクリーンショット 2025-11-09 204006.png` | 会心率 / 元素熟知 / 会心ダメージ | 同上 | 会心率, 会心ダメージ |
+| 花 | `flower.png` | HP 固定 | 元素熟知 / 攻撃力% / 会心率 / 会心ダメージ | 会心率, 会心ダメージ |
+| 羽 | `plume.png` | 攻撃力固定 | 同上 | 会心率, 会心ダメージ |
+| 時計 | `sands.png` | 元素熟知 / 攻撃力% | 会心率 / 元素熟知 / 会心ダメージ / 攻撃力% | 会心率, 会心ダメージ |
+| 杯 | `goblet.png` | 元素熟知 / 攻撃力% | 同上 | 会心率, 会心ダメージ |
+| 冠 | `circlet.png` | 会心率 / 元素熟知 / 会心ダメージ | 同上 | 会心率, 会心ダメージ |
 
 - UI の文言は「次の追加ステータスのうち、いずれか2個を含む。かつ必須ステータスをすべて含む」。  
 - そのため YAML では `substats_required_any_of` に列挙（[CR, CD, ER, EM]）し、`substats_required_min: 2`、さらに `substats_required_all_of: [CR, CD]` をセットしている。
 
 ## 反映済みファイル
 - `presets/night-of-the-sky/recommended.yml`
-- `presets/lock-presets.yml`
 
 ## Custom Preset 調査メモ
 `setting1/setting2` は「異なるキャラクタータイプを 2 件まで保存できる」ゲーム内仕様に揃えるため、攻略サイトの記述を根拠にビルドごとに分岐させた。

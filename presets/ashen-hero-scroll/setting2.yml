@@ -7,6 +7,7 @@ preset:
   nickname_en: Ashen Hero Scroll
   intent: support_buffer_tank
   targets: [Kachina, Xilonen]
+  targets_ja: [カチーナ, シロネン]
   slots:
     flower:
       main_allowed: [HP]

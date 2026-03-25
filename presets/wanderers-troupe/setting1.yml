@@ -7,6 +7,7 @@ preset:
   nickname_en: Wanderer's Troupe
   intent: onfield_dps
   targets: [Ganyu, Yanfei, Klee, Lyney, Neuvillette, Chasca]
+  targets_ja: [甘雨, 煙緋, クレー, リネ, ヌヴィレット, チャスカ]
   slots:
     flower:
       main_allowed: [HP]

@@ -7,6 +7,7 @@ preset:
   nickname_en: Tenacity of the Millelith
   intent: support_healer_hp
   targets: [Kokomi]
+  targets_ja: [珊瑚宮心海]
   slots:
     flower:
       main_allowed: [HP]

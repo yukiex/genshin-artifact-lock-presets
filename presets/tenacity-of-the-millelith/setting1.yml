@@ -7,6 +7,7 @@ preset:
   nickname_en: Tenacity of the Millelith
   intent: support_shield_hp
   targets: [Zhongli, Layla, Kirara]
+  targets_ja: [鍾離, レイラ, 綺良々]
   slots:
     flower:
       main_allowed: [HP]

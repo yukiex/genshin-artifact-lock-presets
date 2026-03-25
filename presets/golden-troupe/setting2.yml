@@ -7,6 +7,7 @@ preset:
   nickname_en: Golden Troupe
   intent: offfield_hp_skill_dps
   targets: [Furina]
+  targets_ja: [フリーナ]
   slots:
     flower:
       main_allowed: [HP]

@@ -8,6 +8,7 @@ preset:
   intent: onfield_dps
   targets: [Cyno, Keqing, Clorinde, Alhaitham, Tighnari,
             HuTao, Yoimiya, Ganyu, Tartaglia, Neuvillette, Eula]
+  targets_ja: [セノ, 刻晴, クロリンデ, アルハイゼン, ティナリ, 胡桃, 宵宮, 甘雨, タルタリヤ, ヌヴィレット, エウルア]
   slots:
     flower:
       main_allowed: [HP]

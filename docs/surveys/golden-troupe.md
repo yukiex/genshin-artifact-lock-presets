@@ -7,7 +7,7 @@
 ## 1. 推奨設定の根拠
 - Evidence source: [ ] 静止スクリーンショット [ ] 画面録画 [ ] 人手メモ
 - Evidence level: provisional
-- [ ] 静止スクリーンショットがある場合は `docs/reference/golden-troupe-lock/` に配置（flower / plume / sands / goblet / circlet）。
+- [ ] 静止スクリーンショットがある場合は `docs/references/golden-troupe/` に配置（flower / plume / sands / goblet / circlet）。
 - `recommended.yml` は未作成。setting 先行作成のみ実施。
 
 | スロット | 証跡ファイル / メモ | 主ステータス | サブステ候補 (いずれか2個) | 必須ステータス |
