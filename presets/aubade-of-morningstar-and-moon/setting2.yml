@@ -1,0 +1,35 @@
+version: 1
+set_id: aubade-of-morningstar-and-moon
+set_name_ja: 暁の星と月の歌
+preset:
+  key: setting2
+  name: Lunar Support DPS (HP/ER)
+  nickname_en: Aubade of Morningstar and Moon
+  intent: offfield_lunar_support_dps
+  targets: [Columbina]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [HP%, ER, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: []
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [HP%, ER, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: []
+    sands:
+      main_allowed: [HP%, ER%]
+      substats_required_any_of: [HP%, ER, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: []
+    goblet:
+      main_allowed: [HydroDMG%, HP%]
+      substats_required_any_of: [HP%, ER, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: []
+    circlet:
+      main_allowed: [CR, CD, HP%]
+      substats_required_any_of: [HP%, ER, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: []

@@ -1,0 +1,35 @@
+version: 1
+set_id: golden-troupe
+set_name_ja: 黄金の劇団
+preset:
+  key: setting2
+  name: Off-Field HP Skill DPS
+  nickname_en: Golden Troupe
+  intent: offfield_hp_skill_dps
+  targets: [Furina]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [ER, HP%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: []
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [ER, HP%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: []
+    sands:
+      main_allowed: [HP%, ER%]
+      substats_required_any_of: [ER, HP%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: []
+    goblet:
+      main_allowed: [HP%, HydroDMG%]
+      substats_required_any_of: [ER, HP%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: []
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [ER, HP%, CR, CD]
+      substats_required_min: 3
+      substats_required_all_of: []

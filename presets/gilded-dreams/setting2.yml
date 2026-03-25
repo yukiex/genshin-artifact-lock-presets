@@ -1,0 +1,35 @@
+version: 1
+set_id: gilded-dreams
+set_name_ja: 金メッキの夢
+preset:
+  key: setting2
+  name: Full EM Trigger
+  nickname_en: Gilded Dreams
+  intent: reaction_trigger_full_em
+  targets: [KukiShinobu, Thoma]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [EM, ER, HP%]
+      substats_required_min: 2
+      substats_required_all_of: [EM]
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [EM, ER, HP%]
+      substats_required_min: 2
+      substats_required_all_of: [EM]
+    sands:
+      main_allowed: [EM, ER%]
+      substats_required_any_of: [EM, ER, HP%]
+      substats_required_min: 2
+      substats_required_all_of: [EM]
+    goblet:
+      main_allowed: [EM]
+      substats_required_any_of: [EM, ER, HP%]
+      substats_required_min: 2
+      substats_required_all_of: [EM]
+    circlet:
+      main_allowed: [EM]
+      substats_required_any_of: [EM, ER, HP%]
+      substats_required_min: 2
+      substats_required_all_of: [EM]

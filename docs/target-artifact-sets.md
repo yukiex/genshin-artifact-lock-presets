@@ -4,12 +4,12 @@
 
 | 状態 | 日本語名 | 英語名 | 候補 `set_id` | メモ |
 | --- | --- | --- | --- | --- |
-| planned | 暁の星と月の歌 | Aubade of Morningstar and Moon | `aubade-of-morningstar-and-moon` | Luna IV の月反応サブアタ系セット |
-| planned | 風立ちの日 | A Day Carved From Rising Winds | `a-day-carved-from-rising-winds` | 魔導キャラ向け攻撃/会心系セット |
-| planned | 深林の記憶 | Deepwood Memories | `deepwood-memories` | 草元素耐性デバフ支援セット |
-| planned | 金メッキの夢 | Gilded Dreams | `gilded-dreams` | 熟知軸の反応ビルド向けセット |
-| planned | ファントムハンター | Marechaussee Hunter | `marechaussee-hunter` | HP 増減連動の会心系アタッカーセット |
-| planned | 黄金の劇団 | Golden Troupe | `golden-troupe` | スキル火力特化の控え運用セット |
+| settings-authored | 暁の星と月の歌 | Aubade of Morningstar and Moon | `aubade-of-morningstar-and-moon` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
+| settings-authored | 風立ちの日 | A Day Carved From Rising Winds | `a-day-carved-from-rising-winds` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
+| settings-authored | 深林の記憶 | Deepwood Memories | `deepwood-memories` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
+| settings-authored | 金メッキの夢 | Gilded Dreams | `gilded-dreams` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
+| settings-authored | ファントムハンター | Marechaussee Hunter | `marechaussee-hunter` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
+| settings-authored | 黄金の劇団 | Golden Troupe | `golden-troupe` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
 
 ## 命名メモ
 
