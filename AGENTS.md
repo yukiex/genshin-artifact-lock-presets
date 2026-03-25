@@ -3,7 +3,7 @@ This repo curates YAML presets for Genshin Impact's Lock Assist; keep every cont
 
 ## Project Structure & Module Organization
 - `presets/lock-presets.yml` is the canonical catalog consumed by downstream tooling; keep it synchronized with any per-set edits.
-- `presets/<set>/` folders (currently `moonweaver/`, `night-of-the-sky/`, `finale-of-the-deep/`, `song-of-days-past/`, `obsidian-codex/`, `ashen-hero-scroll/`, `wanderers-troupe/`, `tenacity-of-the-millelith/`) hold human-friendly files named `recommended.yml`, `setting1.yml`, and `setting2.yml`—copy this pattern when adding sets.
+- `presets/<set>/` folders (currently `moonweaver/`, `night-of-the-sky/`, `finale-of-the-deep/`, `song-of-days-past/`, `obsidian-codex/`, `ashen-hero-scroll/`, `wanderers-troupe/`, `tenacity-of-the-millelith/`) hold human-friendly files named `recommended.yml`, `setting1.yml`, and `setting2.yml`—copy this pattern when adding sets. 新規セットの草案も必ずこの個別ディレクトリ配下に置き、単一の結合ファイルだけで済ませないこと。
 - `docs/ui-mapping.md` defines every abbreviation and mapping between UI toggles and YAML keys, and `README.md` hosts the user-facing explanation; update them whenever wording, abbreviations, or slot semantics change.
 
 ## Build, Test, and Development Commands

@@ -74,7 +74,3 @@
 - [ ] `presets/lock-presets.yml`
 - [ ] `README.md`
 - [ ] `docs/ui-mapping.md`
-
-## 6. ブロッカー
-- `recommended` はゲーム内「ロックアシスト」推奨設定の静止スクリーンショット・録画・人手メモのいずれも未取得なので未確定。
-- そのため、`recommended.yml` と `presets/lock-presets.yml` への追加はまだ実施しない。
