@@ -1,0 +1,35 @@
+version: 1
+set_id: marechaussee-hunter
+set_name_ja: ファントムハンター
+preset:
+  key: setting2
+  name: ATK Fluctuation Carry
+  nickname_en: Marechaussee Hunter
+  intent: onfield_atk_carry
+  targets: [Lyney, Wriothesley]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    sands:
+      main_allowed: [ATK%]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    goblet:
+      main_allowed: [PyroDMG%, CryoDMG%, ATK%]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []

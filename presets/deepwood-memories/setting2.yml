@@ -1,0 +1,35 @@
+version: 1
+set_id: deepwood-memories
+set_name_ja: 深林の記憶
+preset:
+  key: setting2
+  name: On-Field Dendro Carry
+  nickname_en: Deepwood Memories
+  intent: onfield_dendro_carry
+  targets: [Nahida, Alhaitham, Tighnari]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_min: 3
+      substats_required_all_of: []
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_min: 3
+      substats_required_all_of: []
+    sands:
+      main_allowed: [EM, ATK%]
+      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_min: 3
+      substats_required_all_of: []
+    goblet:
+      main_allowed: [DendroDMG%, EM]
+      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_min: 3
+      substats_required_all_of: []
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [CR, CD, EM, ATK%]
+      substats_required_min: 3
+      substats_required_all_of: []

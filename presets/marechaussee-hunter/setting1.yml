@@ -1,0 +1,35 @@
+version: 1
+set_id: marechaussee-hunter
+set_name_ja: ファントムハンター
+preset:
+  key: setting1
+  name: HP Fluctuation Carry
+  nickname_en: Marechaussee Hunter
+  intent: onfield_hp_carry
+  targets: [Neuvillette]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [CR, CD, HP%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [CR, CD, HP%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    sands:
+      main_allowed: [HP%, ER%]
+      substats_required_any_of: [CR, CD, HP%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    goblet:
+      main_allowed: [HydroDMG%, HP%]
+      substats_required_any_of: [CR, CD, HP%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [CR, CD, HP%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []

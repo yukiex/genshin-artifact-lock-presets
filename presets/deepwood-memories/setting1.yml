@@ -1,0 +1,35 @@
+version: 1
+set_id: deepwood-memories
+set_name_ja: 深林の記憶
+preset:
+  key: setting1
+  name: Dendro Shred Support
+  nickname_en: Deepwood Memories
+  intent: support_dendro_shred
+  targets: [Baizhu, TravelerDendro, Yaoyao, Collei]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [ER, EM, HP%, CR]
+      substats_required_min: 2
+      substats_required_all_of: [ER]
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [ER, EM, HP%, CR]
+      substats_required_min: 2
+      substats_required_all_of: [ER]
+    sands:
+      main_allowed: [ER%, EM, HP%]
+      substats_required_any_of: [ER, EM, HP%, CR]
+      substats_required_min: 2
+      substats_required_all_of: [ER]
+    goblet:
+      main_allowed: [DendroDMG%, EM, HP%]
+      substats_required_any_of: [ER, EM, HP%, CR]
+      substats_required_min: 2
+      substats_required_all_of: [ER]
+    circlet:
+      main_allowed: [EM, CR, Healing%]
+      substats_required_any_of: [ER, EM, HP%, CR]
+      substats_required_min: 2
+      substats_required_all_of: [ER]

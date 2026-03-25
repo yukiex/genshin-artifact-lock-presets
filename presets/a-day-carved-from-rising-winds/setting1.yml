@@ -1,0 +1,35 @@
+version: 1
+set_id: a-day-carved-from-rising-winds
+set_name_ja: 風立ちの日
+preset:
+  key: setting1
+  name: Mystic Main DPS
+  nickname_en: A Day Carved From Rising Winds
+  intent: onfield_dps_atk_crit
+  targets: [Varka, Klee]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    sands:
+      main_allowed: [ATK%]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    goblet:
+      main_allowed: [AnemoDMG%, PyroDMG%, ATK%]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
