@@ -4,8 +4,8 @@
 
 | 状態 | 日本語名 | 英語名 | 候補 `set_id` | メモ |
 | --- | --- | --- | --- | --- |
-| settings-authored | 暁の星と月の歌 | Aubade of Morningstar and Moon | `aubade-of-morningstar-and-moon` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
-| settings-authored | 風立ちの日 | A Day Carved From Rising Winds | `a-day-carved-from-rising-winds` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
+| custom-authored | 暁の星と月の歌 | Aubade of Morningstar and Moon | `aubade-of-morningstar-and-moon` | `setting1.yml` / `setting2.yml` / `setting3.yml` 作成済み。`recommended.yml` は省略 |
+| custom-authored | 風立ちの日 | A Day Carved From Rising Winds | `a-day-carved-from-rising-winds` | `setting1.yml` / `setting2.yml` / `setting3.yml` 作成済み。`recommended.yml` は省略 |
 | settings-authored | 深林の記憶 | Deepwood Memories | `deepwood-memories` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
 | settings-authored | 金メッキの夢 | Gilded Dreams | `gilded-dreams` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
 | settings-authored | ファントムハンター | Marechaussee Hunter | `marechaussee-hunter` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |

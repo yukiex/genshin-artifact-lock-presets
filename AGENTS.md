@@ -3,7 +3,7 @@
 This repository curates YAML presets for Genshin Impact's Lock Assist. Keep every change traceable, reviewable, and easy to reconcile with in-game behavior.
 
 ## Project Structure & Module Organization
-- `presets/<set-id>/` is the source of truth. Each set directory may contain `recommended.yml`, `setting1.yml`, and `setting2.yml`.
+- `presets/<set-id>/` is the source of truth. Each set directory may contain `recommended.yml`, `setting1.yml`, `setting2.yml`, and `setting3.yml`.
 - `docs/surveys/<set-id>.md` stores the research note, evidence trail, and authored rationale for one set.
 - `docs/references/<set-id>/` stores reference screenshots or placeholder files. Use the canonical screenshot names `flower.png`, `plume.png`, `sands.png`, `goblet.png`, and `circlet.png` when images exist.
 - `docs/ui-mapping.md` defines the schema abbreviations and UI mapping rules.
@@ -11,7 +11,7 @@ This repository curates YAML presets for Genshin Impact's Lock Assist. Keep ever
 
 ## Build, Test, and Development Commands
 - `yamllint presets docs` — structural lint.
-- `yq '.preset.slots | keys' presets/moonweaver/recommended.yml` — confirm the expected five slots.
+- `yq '.preset.slots | keys' presets/moonweaver/*.yml` — confirm the expected five slots.
 - `yq '.preset.slots[] | select(.substats_required_min == null)' presets/moonweaver/*.yml` — should print nothing.
 - `rg -n '^\s*targets(_ja)?:' presets/<set-id>` — quick check that `targets` and `targets_ja` are both present when needed.
 
@@ -25,7 +25,7 @@ This repository curates YAML presets for Genshin Impact's Lock Assist. Keep ever
 ## Testing Guidelines
 - Lint plus semantic review is the minimum bar.
 - After editing a preset, validate the five-slot structure and confirm `substats_required_min` is present everywhere.
-- If the change affects `recommended`, update the matching survey note and keep the evidence trail intact.
+- If the change affects `recommended`, update the matching survey note and keep the evidence trail intact. `recommended` is optional and may be omitted when there is no strong transcription evidence.
 - If the change affects `targets`, update both `targets` and `targets_ja` together.
 
 ## Commit & Pull Request Guidelines
@@ -48,20 +48,22 @@ This repository curates YAML presets for Genshin Impact's Lock Assist. Keep ever
 - 調査メモ `docs/surveys/<set-id>.md` をテンプレートから作成する。
 
 ### 2. Custom Settings の調査と作成
-- `setting1` / `setting2` は厳しさ違いではなく異なるアーキタイプにする。
+- `setting1` / `setting2` / `setting3` は厳しさ違いではなく異なるアーキタイプにする。
 - 攻略サイト・理論系ガイド・BWiki などを見て、対象キャラと主ステ / サブステ方針を整理する。
 - `targets` と `targets_ja` を同じ順序で書く。
-- `setting1` / `setting2` はスクリーンショット待ちをせず先行作成してよい。
+- Custom settings はスクリーンショット待ちをせず先行作成してよい。
 
 ### 3. 推奨設定の証跡収集
+- `recommended.yml` は必須ではない。メンテナンス不能な暫定転記を増やすより、根拠の明確な custom preset を優先してよい。
 - `recommended` の証跡優先順位は、静止スクリーンショット → 画面録画 → 人手メモ。
 - 静止画がある場合は `docs/references/<set-id>/flower.png` などの canonical name にそろえる。
 - 静止画がなくても `recommended.yml` を作ることはできるが、その場合は survey note に `Evidence level: provisional` を明記する。
 
 ### 4. 推奨設定の転記
+- `recommended.yml` を作らない場合、この手順は省略してよい。
 - 証跡から主ステータス、候補サブステ、必須サブステを読み取る。
 - UI 文言を YAML に正確に対応させる。
-- `recommended.yml` は転記に徹し、改善案は `setting1` / `setting2` に分離する。
+- `recommended.yml` を作る場合は転記に徹し、改善案は custom settings に分離する。
 
 ### 5. ドキュメント更新
 - 新しい略語が必要なら `docs/ui-mapping.md` を更新する。

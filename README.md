@@ -7,8 +7,9 @@ This repository stores one directory per artifact set under `presets/<set-id>/`.
 - `recommended.yml` — a direct transcription of the in-game recommended rule set
 - `setting1.yml` — a custom preset for the primary authored archetype
 - `setting2.yml` — a custom preset for a second meaningful archetype
+- `setting3.yml` — an optional custom preset for a third meaningful archetype
 
-There is no aggregate catalog file anymore. The per-set YAML files are the source of truth.
+`recommended.yml` is optional and mostly retained for existing screenshot-backed transcriptions. New work can omit it when custom presets are easier to maintain. There is no aggregate catalog file anymore. The per-set YAML files are the source of truth.
 
 ## Current Coverage
 
@@ -56,7 +57,8 @@ genshin-artifact-lock-presets/
    ├─ moonweaver/
    │  ├─ recommended.yml
    │  ├─ setting1.yml
-   │  └─ setting2.yml
+   │  ├─ setting2.yml
+   │  └─ setting3.yml
    └─ ...
 ```
 
@@ -67,7 +69,7 @@ version: 1
 set_id: moonweaver
 set_name_ja: 月を紡ぐ夜の歌
 preset:
-  key: recommended | setting1 | setting2
+  key: recommended | setting1 | setting2 | setting3
   name: Recommended (baseline)
   nickname_en: Moonweaver
   intent: support_offfield
@@ -85,8 +87,8 @@ preset:
 
 - `targets` is an English identifier list for readability in code and diffs.
 - `targets_ja` is the Japanese display-name list in the same order as `targets`.
-- `recommended` should be transcription, not theorycraft.
-- `setting1` and `setting2` should be different archetypes, not strict / lenient copies.
+- `recommended` should be transcription, not theorycraft, and is optional.
+- `setting1` / `setting2` / `setting3` should be different archetypes, not strict / lenient copies.
 
 ## Quick Start
 
@@ -97,7 +99,7 @@ preset:
    - set the threshold to `substats_required_min`
    - require every stat listed in `substats_required_all_of`
    - use `main_allowed` only as a hint for filtering main stats
-4. Keep `recommended` enabled when it exists, then layer `setting1` or `setting2` on top if you want a narrower filter.
+4. Keep `recommended` enabled when it exists, then layer a custom setting on top if you want a narrower filter.
 
 ## Research and Evidence Files
 
@@ -109,7 +111,7 @@ preset:
 ## Validation Commands
 
 - `yamllint presets docs`
-- `yq '.preset.slots | keys' presets/<set-id>/recommended.yml`
+- `yq '.preset.slots | keys' presets/<set-id>/*.yml`
 - `yq '.preset.slots[] | select(.substats_required_min == null)' presets/<set-id>/*.yml`
 - `rg -n '^\s*targets(_ja)?:' presets/<set-id>`
 

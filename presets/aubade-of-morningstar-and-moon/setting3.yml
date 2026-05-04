@@ -2,35 +2,35 @@ version: 1
 set_id: aubade-of-morningstar-and-moon
 set_name_ja: 暁の星と月の歌
 preset:
-  key: setting2
-  name: Lunar Reaction Sub DPS (HP/ER)
+  key: setting3
+  name: Lunar-Crystallize Sub DPS (DEF)
   nickname_en: Aubade of Morningstar and Moon
-  intent: offfield_lunar_support_dps
-  targets: [Columbina]
-  targets_ja: [コロンビーナ]
+  intent: offfield_lunar_crystallize_def
+  targets: [Linnea]
+  targets_ja: [リンネア]
   slots:
     flower:
       main_allowed: [HP]
-      substats_required_any_of: [CR, CD, HP%, HP, ER, EM]
+      substats_required_any_of: [CR, CD, DEF%, ER, EM]
       substats_required_min: 3
       substats_required_all_of: []
     plume:
       main_allowed: [ATK]
-      substats_required_any_of: [CR, CD, HP%, HP, ER, EM]
+      substats_required_any_of: [CR, CD, DEF%, ER, EM]
       substats_required_min: 3
       substats_required_all_of: []
     sands:
-      main_allowed: [HP%, ER%]
-      substats_required_any_of: [CR, CD, HP%, HP, ER, EM]
+      main_allowed: [DEF%]
+      substats_required_any_of: [CR, CD, DEF%, ER, EM]
       substats_required_min: 3
       substats_required_all_of: []
     goblet:
-      main_allowed: [HP%, HydroDMG%, EM]
-      substats_required_any_of: [CR, CD, HP%, HP, ER, EM]
+      main_allowed: [DEF%]
+      substats_required_any_of: [CR, CD, DEF%, ER, EM]
       substats_required_min: 3
       substats_required_all_of: []
     circlet:
-      main_allowed: [CR, CD, HP%]
-      substats_required_any_of: [CR, CD, HP%, HP, ER, EM]
+      main_allowed: [CR, CD, DEF%]
+      substats_required_any_of: [CR, CD, DEF%, ER, EM]
       substats_required_min: 3
       substats_required_all_of: []

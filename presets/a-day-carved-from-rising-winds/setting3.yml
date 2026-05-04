@@ -2,12 +2,12 @@ version: 1
 set_id: a-day-carved-from-rising-winds
 set_name_ja: 風立ちの日
 preset:
-  key: setting1
-  name: Hexerei On-field DPS
+  key: setting3
+  name: Burst DPS (Pyro/ER)
   nickname_en: A Day Carved From Rising Winds
-  intent: onfield_hexerei_atk_crit
-  targets: [Varka, Venti, Klee, Razor]
-  targets_ja: [ファルカ, ウェンティ, クレー, レザー]
+  intent: offfield_burst_dps_pyro
+  targets: [Durin]
+  targets_ja: [ドゥリン]
   slots:
     flower:
       main_allowed: [HP]
@@ -20,13 +20,12 @@ preset:
       substats_required_min: 3
       substats_required_all_of: []
     sands:
-      main_allowed: [ATK%]
+      main_allowed: [ATK%, EM, ER%]
       substats_required_any_of: [CR, CD, ATK%, ER, EM]
       substats_required_min: 3
       substats_required_all_of: []
     goblet:
-      main_allowed: [PyroDMG%, HydroDMG%, ElectroDMG%, AnemoDMG%, CryoDMG%,
-                     GeoDMG%, DendroDMG%, PhysicalDMG%, ATK%]
+      main_allowed: [PyroDMG%, ATK%]
       substats_required_any_of: [CR, CD, ATK%, ER, EM]
       substats_required_min: 3
       substats_required_all_of: []
