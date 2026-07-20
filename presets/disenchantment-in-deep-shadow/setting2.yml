@@ -1,0 +1,36 @@
+version: 1
+set_id: disenchantment-in-deep-shadow
+set_name_ja: 影に沈む幻
+preset:
+  key: setting2
+  name: Stellar-Conduct EM/ATK DPS
+  nickname_en: Disenchantment in Deep Shadow
+  intent: stellar_conduct_em_atk_crit
+  targets: [Cyno]
+  targets_ja: [セノ]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [CR, CD, ATK%, EM]
+      substats_required_min: 3
+      substats_required_all_of: []
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [CR, CD, ATK%, EM]
+      substats_required_min: 3
+      substats_required_all_of: []
+    sands:
+      main_allowed: [ATK%, EM]
+      substats_required_any_of: [CR, CD, ATK%, EM]
+      substats_required_min: 3
+      substats_required_all_of: []
+    goblet:
+      main_allowed: [ATK%, EM]
+      substats_required_any_of: [CR, CD, ATK%, EM]
+      substats_required_min: 3
+      substats_required_all_of: []
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [CR, CD, ATK%, EM]
+      substats_required_min: 3
+      substats_required_all_of: []

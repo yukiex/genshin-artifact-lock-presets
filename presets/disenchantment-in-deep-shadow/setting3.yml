@@ -1,0 +1,36 @@
+version: 1
+set_id: disenchantment-in-deep-shadow
+set_name_ja: 影に沈む幻
+preset:
+  key: setting3
+  name: Physical Superconduct DPS
+  nickname_en: Disenchantment in Deep Shadow
+  intent: physical_superconduct_atk_crit
+  targets: [Eula]
+  targets_ja: [エウルア]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    sands:
+      main_allowed: [ATK%]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    goblet:
+      main_allowed: [PhysicalDMG%, ATK%]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [CR, CD, ATK%, ER]
+      substats_required_min: 3
+      substats_required_all_of: []

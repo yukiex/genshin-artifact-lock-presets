@@ -1,0 +1,36 @@
+version: 1
+set_id: celestial-gift
+set_name_ja: 天からの贈り物
+preset:
+  key: setting3
+  name: Off-field Elemental Holder
+  nickname_en: Celestial Gift
+  intent: offfield_elemental_holder
+  targets: [Durin, Fischl, Mona]
+  targets_ja: [ドゥリン, フィッシュル, モナ]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [CR, CD, ATK%, ER, EM]
+      substats_required_min: 3
+      substats_required_all_of: []
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [CR, CD, ATK%, ER, EM]
+      substats_required_min: 3
+      substats_required_all_of: []
+    sands:
+      main_allowed: [ATK%, ER%, EM]
+      substats_required_any_of: [CR, CD, ATK%, ER, EM]
+      substats_required_min: 3
+      substats_required_all_of: []
+    goblet:
+      main_allowed: [PyroDMG%, ElectroDMG%, HydroDMG%, ATK%, EM]
+      substats_required_any_of: [CR, CD, ATK%, ER, EM]
+      substats_required_min: 3
+      substats_required_all_of: []
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [CR, CD, ATK%, ER, EM]
+      substats_required_min: 3
+      substats_required_all_of: []

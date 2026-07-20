@@ -25,6 +25,8 @@ This repository stores one directory per artifact set under `presets/<set-id>/`.
 | `tenacity-of-the-millelith` | 千岩牢固 | no | partial |
 | `aubade-of-morningstar-and-moon` | 暁の星と月の歌 | no | yes |
 | `a-day-carved-from-rising-winds` | 風立ちの日 | no | yes |
+| `celestial-gift` | 天からの贈り物 | no | yes |
+| `disenchantment-in-deep-shadow` | 影に沈む幻 | no | yes |
 | `deepwood-memories` | 深林の記憶 | no | yes |
 | `gilded-dreams` | 金メッキの夢 | no | yes |
 | `marechaussee-hunter` | ファントムハンター | no | yes |

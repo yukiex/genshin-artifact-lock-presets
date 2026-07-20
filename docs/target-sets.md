@@ -4,6 +4,8 @@
 
 | 状態 | 日本語名 | 英語名 | 候補 `set_id` | メモ |
 | --- | --- | --- | --- | --- |
+| custom-authored | 天からの贈り物 | Celestial Gift | `celestial-gift` | `setting1.yml` / `setting2.yml` / `setting3.yml` 作成済み。`recommended.yml` は省略 |
+| custom-authored | 影に沈む幻 | Disenchantment in Deep Shadow | `disenchantment-in-deep-shadow` | `setting1.yml` / `setting2.yml` / `setting3.yml` 作成済み。`recommended.yml` は省略 |
 | custom-authored | 暁の星と月の歌 | Aubade of Morningstar and Moon | `aubade-of-morningstar-and-moon` | `setting1.yml` / `setting2.yml` / `setting3.yml` 作成済み。`recommended.yml` は省略 |
 | custom-authored | 風立ちの日 | A Day Carved From Rising Winds | `a-day-carved-from-rising-winds` | `setting1.yml` / `setting2.yml` / `setting3.yml` 作成済み。`recommended.yml` は省略 |
 | settings-authored | 深林の記憶 | Deepwood Memories | `deepwood-memories` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
@@ -19,5 +21,6 @@
 
 ## 参照メモ
 
+- `Celestial Gift` と `Disenchantment in Deep Shadow` は現行の公開英語表記を採用。
 - `Aubade of Morningstar and Moon` と `A Day Carved From Rising Winds` は現行の公開英語表記を採用。
 - 既存の汎用セット 4 件は現在一般的な英語セット名を採用。
