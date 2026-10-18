@@ -97,7 +97,8 @@ preset:
 3. For each slot:
    - check the substats listed in `substats_required_any_of`
    - set the threshold to `substats_required_min`
-   - require every stat listed in `substats_required_all_of`
+   - turn the star yellow for every stat in `substats_required_all_of`; leave other selected stats' stars gray
+   - if `substats_required_all_of: []`, clear all yellow stars (no mandatory substats)
    - use `main_allowed` only as a hint for filtering main stats
 4. Keep `recommended` enabled when it exists, then layer `setting1` or `setting2` on top if you want a narrower filter.
 

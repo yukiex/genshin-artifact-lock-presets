@@ -43,6 +43,9 @@ Use this checklist with `SKILL.md` when adding or revising one set.
 - [ ] Every slot has `substats_required_any_of`.
 - [ ] Every slot has `substats_required_min`.
 - [ ] Every slot has `substats_required_all_of`.
+- [ ] Mandatory (yellow-star) stats were evaluated per slot, including the reason for an empty list.
+- [ ] Mandatory stats are selected candidates, and their count does not exceed the threshold.
+- [ ] Every allowed main stat can satisfy the substat rule without a main/substat collision.
 - [ ] If `targets` exists, `targets_ja` also exists.
 - [ ] `targets` and `targets_ja` are in the same order.
 
@@ -51,6 +54,7 @@ Use this checklist with `SKILL.md` when adding or revising one set.
 - [ ] The survey note records source URLs.
 - [ ] The survey note explains `setting1`.
 - [ ] The survey note explains `setting2`.
+- [ ] Each rule states candidates, count threshold, and yellow-star requirements (including "none").
 - [ ] The survey note lists changed files.
 - [ ] The survey note records remaining uncertainty.
 

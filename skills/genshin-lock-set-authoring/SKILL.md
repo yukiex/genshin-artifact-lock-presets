@@ -74,6 +74,9 @@ For each file:
 - if `targets` exists, add `targets_ja`
 - ensure all five slots exist
 - ensure every slot has `main_allowed`, `substats_required_any_of`, `substats_required_min`, and `substats_required_all_of`
+- Decide mandatory substats per slot using the yellow-star mapping in `docs/ui-mapping.md`. Explain both non-empty requirements and intentionally empty lists in the survey note.
+- Present candidate substats, count threshold, and mandatory (yellow-star) substats together in user-facing rules; explicitly say "none" for an empty list.
+- Keep mandatory stats within the candidate list and the threshold at least as large as the mandatory count. Check that every allowed main stat can satisfy the substat rule without a main/substat collision.
 
 ### 4. Handle `recommended`
 - Use still screenshots first, then recording, then memo.
