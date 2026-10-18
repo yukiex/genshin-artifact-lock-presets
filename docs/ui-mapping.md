@@ -47,10 +47,14 @@
 ## 2. 基本マッピング（サブステの指定）
 UIの「追加するサブステータス」と「いずれかN個以上」は、YAMLでは下記に対応します。
 
+部位内のキーは、画面の操作順に合わせて `main_allowed`（メイン）→
+`substats_required_any_of`（チェックする候補）→ `substats_required_all_of`（黄色☆にする必須項目）→
+`substats_required_min`（いずれかN個）の順に記載する。
+
 ```yaml
 substats_required_any_of: [CR, CD, ER, EM]
-substats_required_min: 2
 substats_required_all_of: [ER, EM]
+substats_required_min: 2
 ```
 
 `substats_required_all_of` は UI で黄色表示される「必須ステータス」を 1 つも欠かさず含めるためのフィールド。Moonweaver 推奨設定のように ER/EM を両方要求するケースで利用する。
@@ -72,8 +76,8 @@ substats_required_all_of: [ER, EM]
 
 ```yaml
 substats_required_any_of: [CR, CD]
-substats_required_min: 1
 substats_required_all_of: [CR]
+substats_required_min: 1
 ```
 
 - 会心率のみ: 条件を満たす。
