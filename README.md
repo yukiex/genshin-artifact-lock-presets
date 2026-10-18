@@ -14,6 +14,8 @@ There is no aggregate catalog file anymore. The per-set YAML files are the sourc
 
 | Set ID | Japanese Name | Recommended | Custom presets |
 | --- | --- | --- | --- |
+| `heart-of-the-furnace` | 炉炎溶錬の心 | no | yes |
+| `scarlet-proof` | 紅血の証 | no | yes |
 | `moonweaver` | 月を紡ぐ夜の歌 | yes | yes |
 | `night-of-the-sky` | 天穹の顕現せし夜 | yes | yes |
 | `finale-of-the-deep` | 深廊の終曲 | yes | yes |
@@ -77,8 +79,8 @@ preset:
     flower:
       main_allowed: [HP]
       substats_required_any_of: [CR, CD, ER, EM]
-      substats_required_min: 2
       substats_required_all_of: [ER]
+      substats_required_min: 2
 ```
 
 ### Field notes
@@ -94,8 +96,9 @@ preset:
 2. In the in-game Lock Assist UI, pick the matching artifact set.
 3. For each slot:
    - check the substats listed in `substats_required_any_of`
+   - turn the star yellow for every stat in `substats_required_all_of`; leave other selected stats' stars gray
+   - if `substats_required_all_of: []`, clear all yellow stars (no mandatory substats)
    - set the threshold to `substats_required_min`
-   - require every stat listed in `substats_required_all_of`
    - use `main_allowed` only as a hint for filtering main stats
 4. Keep `recommended` enabled when it exists, then layer `setting1` or `setting2` on top if you want a narrower filter.
 

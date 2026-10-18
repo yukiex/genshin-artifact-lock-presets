@@ -4,6 +4,8 @@
 
 | 状態 | 日本語名 | 英語名 | 候補 `set_id` | メモ |
 | --- | --- | --- | --- | --- |
+| settings-authored | 炉炎溶錬の心 | Heart of the Furnace | `heart-of-the-furnace` | 火力型 / 回復支援型を作成済み。`recommended.yml` は証跡待ち |
+| settings-authored | 紅血の証 | Scarlet Proof | `scarlet-proof` | ヴェスナ型 / 夢見月瑞希型を作成済み。`recommended.yml` は証跡待ち |
 | settings-authored | 暁の星と月の歌 | Aubade of Morningstar and Moon | `aubade-of-morningstar-and-moon` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
 | settings-authored | 風立ちの日 | A Day Carved From Rising Winds | `a-day-carved-from-rising-winds` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |
 | settings-authored | 深林の記憶 | Deepwood Memories | `deepwood-memories` | `setting1.yml` / `setting2.yml` 作成済み。`recommended.yml` は証跡待ち |

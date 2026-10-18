@@ -1,0 +1,36 @@
+version: 1
+set_id: heart-of-the-furnace
+set_name_ja: 炉炎溶錬の心
+preset:
+  key: setting1
+  name: Stellar Damage (ATK/CRIT)
+  nickname_en: Heart of the Furnace
+  intent: offfield_stellar_dps
+  targets: [Odette, TravelerCryo, YaeMiko]
+  targets_ja: [オデット, 旅人(氷), 八重神子]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [CR, CD, ATK%, EM]
+      substats_required_all_of: [CR, CD]
+      substats_required_min: 3
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [CR, CD, ATK%, EM]
+      substats_required_all_of: [CR, CD]
+      substats_required_min: 3
+    sands:
+      main_allowed: [ATK%, EM]
+      substats_required_any_of: [CR, CD, ATK%, EM]
+      substats_required_all_of: []
+      substats_required_min: 2
+    goblet:
+      main_allowed: [ATK%, EM]
+      substats_required_any_of: [CR, CD, ATK%, EM]
+      substats_required_all_of: []
+      substats_required_min: 2
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [CR, CD, ATK%, EM]
+      substats_required_all_of: []
+      substats_required_min: 2
