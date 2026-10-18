@@ -14,6 +14,8 @@ There is no aggregate catalog file anymore. The per-set YAML files are the sourc
 
 | Set ID | Japanese Name | Recommended | Custom presets |
 | --- | --- | --- | --- |
+| `heart-of-the-furnace` | 炉炎溶錬の心 | no | yes |
+| `scarlet-proof` | 紅血の証 | no | yes |
 | `moonweaver` | 月を紡ぐ夜の歌 | yes | yes |
 | `night-of-the-sky` | 天穹の顕現せし夜 | yes | yes |
 | `finale-of-the-deep` | 深廊の終曲 | yes | yes |

@@ -1,0 +1,36 @@
+version: 1
+set_id: heart-of-the-furnace
+set_name_ja: 炉炎溶錬の心
+preset:
+  key: setting2
+  name: Stellar Healer (ATK/ER/Favonius)
+  nickname_en: Heart of the Furnace
+  intent: support_stellar_healer
+  targets: [Alyosha, Qiqi]
+  targets_ja: [アリョーシャ, 七七]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [ER, CR, ATK%, ATK]
+      substats_required_min: 2
+      substats_required_all_of: []
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [ER, CR, ATK%, ATK]
+      substats_required_min: 2
+      substats_required_all_of: []
+    sands:
+      main_allowed: [ER%, ATK%]
+      substats_required_any_of: [ER, CR, ATK%, ATK]
+      substats_required_min: 2
+      substats_required_all_of: []
+    goblet:
+      main_allowed: [ATK%]
+      substats_required_any_of: [ER, CR, ATK%, ATK]
+      substats_required_min: 2
+      substats_required_all_of: []
+    circlet:
+      main_allowed: [Healing%, ATK%, CR]
+      substats_required_any_of: [ER, CR, ATK%, ATK]
+      substats_required_min: 2
+      substats_required_all_of: []

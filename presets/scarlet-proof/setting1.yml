@@ -1,0 +1,36 @@
+version: 1
+set_id: scarlet-proof
+set_name_ja: 紅血の証
+preset:
+  key: setting1
+  name: Stellar Swirl Carry (ATK/CRIT)
+  nickname_en: Scarlet Proof
+  intent: onfield_stellar_swirl_atk
+  targets: [Vesna]
+  targets_ja: [ヴェスナ]
+  slots:
+    flower:
+      main_allowed: [HP]
+      substats_required_any_of: [CR, CD, ATK%, EM, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    plume:
+      main_allowed: [ATK]
+      substats_required_any_of: [CR, CD, ATK%, EM, ER]
+      substats_required_min: 3
+      substats_required_all_of: []
+    sands:
+      main_allowed: [ATK%, EM]
+      substats_required_any_of: [CR, CD, ATK%, EM, ER]
+      substats_required_min: 2
+      substats_required_all_of: []
+    goblet:
+      main_allowed: [ATK%, EM]
+      substats_required_any_of: [CR, CD, ATK%, EM, ER]
+      substats_required_min: 2
+      substats_required_all_of: []
+    circlet:
+      main_allowed: [CR, CD]
+      substats_required_any_of: [CR, CD, ATK%, EM, ER]
+      substats_required_min: 2
+      substats_required_all_of: []
