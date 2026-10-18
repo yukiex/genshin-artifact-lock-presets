@@ -13,12 +13,12 @@ preset:
       main_allowed: [HP]
       substats_required_any_of: [CR, CD, ATK%, EM]
       substats_required_min: 3
-      substats_required_all_of: []
+      substats_required_all_of: [CR, CD]
     plume:
       main_allowed: [ATK]
       substats_required_any_of: [CR, CD, ATK%, EM]
       substats_required_min: 3
-      substats_required_all_of: []
+      substats_required_all_of: [CR, CD]
     sands:
       main_allowed: [ATK%, EM]
       substats_required_any_of: [CR, CD, ATK%, EM]
